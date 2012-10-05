@@ -1,7 +1,186 @@
 /**
- * Copyright (c) 2007-2012 Ariel Flesler - aflesler(at)gmail(dot)com | http://flesler.blogspot.com
- * Dual licensed under MIT and GPL.
- * @author Ariel Flesler
- * @version 1.4.3.1
+ * @depends jquery
+ * @name jquery.scrollto
+ * @package jquery-scrollto {@link http://balupton.com/projects/jquery-scrollto}
  */
-;(function($){var h=$.scrollTo=function(a,b,c){$(window).scrollTo(a,b,c)};h.defaults={axis:'xy',duration:parseFloat($.fn.jquery)>=1.3?0:1,limit:true};h.window=function(a){return $(window)._scrollable()};$.fn._scrollable=function(){return this.map(function(){var a=this,isWin=!a.nodeName||$.inArray(a.nodeName.toLowerCase(),['iframe','#document','html','body'])!=-1;if(!isWin)return a;var b=(a.contentWindow||a).document||a.ownerDocument||a;return/webkit/i.test(navigator.userAgent)||b.compatMode=='BackCompat'?b.body:b.documentElement})};$.fn.scrollTo=function(e,f,g){if(typeof f=='object'){g=f;f=0}if(typeof g=='function')g={onAfter:g};if(e=='max')e=9e9;g=$.extend({},h.defaults,g);f=f||g.duration;g.queue=g.queue&&g.axis.length>1;if(g.queue)f/=2;g.offset=both(g.offset);g.over=both(g.over);return this._scrollable().each(function(){if(e==null)return;var d=this,$elem=$(d),targ=e,toff,attr={},win=$elem.is('html,body');switch(typeof targ){case'number':case'string':if(/^([+-]=)?\d+(\.\d+)?(px|%)?$/.test(targ)){targ=both(targ);break}targ=$(targ,this);if(!targ.length)return;case'object':if(targ.is||targ.style)toff=(targ=$(targ)).offset()}$.each(g.axis.split(''),function(i,a){var b=a=='x'?'Left':'Top',pos=b.toLowerCase(),key='scroll'+b,old=d[key],max=h.max(d,a);if(toff){attr[key]=toff[pos]+(win?0:old-$elem.offset()[pos]);if(g.margin){attr[key]-=parseInt(targ.css('margin'+b))||0;attr[key]-=parseInt(targ.css('border'+b+'Width'))||0}attr[key]+=g.offset[pos]||0;if(g.over[pos])attr[key]+=targ[a=='x'?'width':'height']()*g.over[pos]}else{var c=targ[pos];attr[key]=c.slice&&c.slice(-1)=='%'?parseFloat(c)/100*max:c}if(g.limit&&/^\d+$/.test(attr[key]))attr[key]=attr[key]<=0?0:Math.min(attr[key],max);if(!i&&g.queue){if(old!=attr[key])animate(g.onAfterFirst);delete attr[key]}});animate(g.onAfter);function animate(a){$elem.animate(attr,f,g.easing,a&&function(){a.call(this,e,g)})}}).end()};h.max=function(a,b){var c=b=='x'?'Width':'Height',scroll='scroll'+c;if(!$(a).is('html,body'))return a[scroll]-$(a)[c.toLowerCase()]();var d='client'+c,html=a.ownerDocument.documentElement,body=a.ownerDocument.body;return Math.max(html[scroll],body[scroll])-Math.min(html[d],body[d])};function both(a){return typeof a=='object'?a:{top:a,left:a}}})(jQuery);
+
+/**
+ * jQuery Aliaser
+ */
+(function($){
+
+	/**
+	 * jQuery ScrollTo (balupton edition)
+	 * @version 1.0.1
+	 * @date August 31, 2010
+	 * @since 0.1.0, August 27, 2010
+     * @package jquery-scrollto {@link http://balupton.com/projects/jquery-scrollto}
+	 * @author Benjamin "balupton" Lupton {@link http://balupton.com}
+	 * @copyright (c) 2010 Benjamin Arthur Lupton {@link http://balupton.com}
+	 * @license MIT License {@link http://creativecommons.org/licenses/MIT/}
+	 */
+	if ( !($.ScrollTo||false) ) {
+		$.ScrollTo = {
+			/**
+			 * The Default Configuration
+			 */
+			config: {
+				duration: 400,
+				easing: 'swing',
+				callback: undefined,
+				durationMode: 'each'
+			},
+
+			/**
+			 * Configure ScrollTo
+			 */
+			configure: function(options){
+				var ScrollTo = $.ScrollTo;
+
+				// Apply Options to Config
+				$.extend(ScrollTo.config, options||{});
+
+				// Chain
+				return this;
+			},
+
+			/**
+			 * Perform the Scroll Animation for the Collections
+			 * We use $inline here, so we can determine the actual offset start for each overflow:scroll item
+			 * Each collection is for each overflow:scroll item
+			 */
+			scroll: function(collections, config){
+				var ScrollTo = $.ScrollTo;
+
+				// Determine the Scroll
+	    		var	collection = collections.pop(),
+					$container = collection.$container,
+					$target = collection.$target;
+
+				// Prepare the Inline Element of the Container
+				var $inline = $('<span/>').css({
+					'position': 'absolute',
+					'top': '0px',
+					'left': '0px'
+				});
+				var position = $container.css('position');
+
+				// Insert the Inline Element of the Container
+				$container.css('position','relative');
+				$inline.appendTo($container);
+
+				// Determine the Offsets
+				var	startOffset = $inline.offset().top,
+					targetOffset = $target.offset().top,
+					offsetDifference = targetOffset - startOffset;
+
+				// Reset the Inline Element of the Container
+				$inline.remove();
+				$container.css('position',position);
+
+				// Prepare the callback
+				var callback = function(event){
+					// Check
+					if ( collections.length === 0 ) {
+						// Callback
+						if ( typeof config.callback === 'function' ) {
+							config.callback.apply(this,[event]);
+						}
+					}
+					else {
+						// Recurse
+						ScrollTo.scroll(collections,config);
+					}
+					// Return true
+					return true;
+				};
+
+				// Perform the Scroll
+				$container.animate({
+					'scrollTop': offsetDifference+'px'
+				}, config.duration, config.easing, callback);
+
+				// Return true
+				return true;
+			},
+
+			/**
+			 * ScrollTo the Element using the Options
+			 */
+			fn: function(options){
+				var ScrollTo = $.ScrollTo;
+
+				// Prepare
+				var	$target = $(this);
+				if ( $target.length === 0 ) {
+					// Chain
+					return this;
+				}
+
+				// Fetch
+				var	$container = $target.parent(),
+					collections = [];
+
+				// Handle Options
+				config = $.extend({},ScrollTo.config,options);
+
+				// Cycle through the containers
+				while ( $container.length === 1 && !$container.is('body') && !($container.get(0) === document) ) {
+					// Check Container
+					var container = $container.get(0);
+					if ( $container.css('overflow-y') !== 'visible' && container.scrollHeight !== container.clientHeight ) {
+						// Push the Collection
+						collections.push({
+							'$container': $container,
+							'$target': $target
+						});
+						// Update the Target
+						$target = $container;
+					}
+					// Update the Container
+					$container = $container.parent();
+				}
+
+				// Add the final collection
+				collections.push({
+					'$container': $($.browser.msie ? 'html' : 'body'),
+					'$target': $target
+				});
+
+				// Adjust the Config
+				if ( config.durationMode === 'all' ) {
+					config.duration /= collections.length;
+				}
+
+				// Handle
+				ScrollTo.scroll(collections,config);
+
+				// Chain
+				return this;
+			},
+
+			/**
+			 * Construct
+			 */
+			construct: function(options){
+				var ScrollTo = $.ScrollTo;
+
+				// Apply our jQuery Function
+				$.fn.ScrollTo = ScrollTo.fn;
+
+				// Apply our Options to the Default Config
+				ScrollTo.config = $.extend(ScrollTo.config,options);
+
+				// Chain
+				return this;
+			}
+		};
+
+		// Construct It
+		$.ScrollTo.construct();
+	}
+	else {
+		window.console.warn("$.ScrollTo has already been defined...");
+	}
+
+})(jQuery);
