@@ -498,7 +498,7 @@ input.button {
 .social.small ul {
   margin: 0; }
   .social.small ul li {
-    height: 34px;
+    height: 31px;
     width: 34px; }
     .social.small ul li.github {
       background: url(../images/github-icon.png) no-repeat; }
@@ -632,16 +632,17 @@ footer {
   width: 100%;
   z-index: 9999999; }
   footer p {
-    margin: 0; }
+    margin: 9px 0 0 0; }
   footer .wrapper {
     border-top: 1px dashed #444444;
     border-bottom: 1px dashed #444444;
-    padding: 3px 0;
     margin: 6px 0; }
   footer .smallback {
     background: url(../images/white_wall.png);
     height: 10px;
     width: 100%; }
+  footer .row, footer .container {
+    padding: 0; }
 
 @media (max-width: 630px) {
   .container {

@@ -149,7 +149,7 @@ input.button {
 	&.small ul {
 		margin: 0;
 		li {
-			height: 34px;
+			height: 31px;
 			width: 34px;
 			&.github {
 				background:url(../images/github-icon.png) no-repeat;
@@ -302,12 +302,11 @@ footer {
 	width: 100%;
 	z-index: 9999999;
 
-	p { margin: 0;}
+	p { margin: 9px 0 0 0;}
 	
 	.wrapper {
 		border-top: 1px dashed #444444;
 		border-bottom: 1px dashed #444444;
-		padding: 3px 0;
 		margin: 6px 0;
 	}
 
@@ -316,6 +315,7 @@ footer {
 		height: 10px;
 		width: 100%;
 	}
+	.row, .container { padding: 0;}
 }
 
 @import 'lib/cheeky/responsive';
