@@ -284,7 +284,8 @@ p, ul, input, textarea, label {
   font-size: 0.9rem; }
 
 p {
-  margin-top: 10px; }
+  margin-top: 16px;
+  line-height: 1.4rem; }
 
 h2, h3, h4, h5, h5, h6 {
   font-family: 'Raleway', sans-serif;
@@ -430,6 +431,9 @@ input.button {
   #about .skills, #contact .skills {
     margin-top: 45px; }
 
+#about {
+  padding-bottom: 100px; }
+
 #portfolio, #intro {
   background: url(../images/white_wall.png); }
   #portfolio h1, #portfolio h2, #portfolio h3, #portfolio h4, #portfolio h5, #portfolio h6, #intro h1, #intro h2, #intro h3, #intro h4, #intro h5, #intro h6 {
@@ -541,8 +545,6 @@ nav {
 /* Footer */
 footer {
   background: url(../images/dark_wall.jpg);
-  /*position: fixed;*/
-  /*bottom:0;*/
   width: 100%;
   z-index: 9999999; }
   footer p {
@@ -550,7 +552,7 @@ footer {
   footer .wrapper {
     border-top: 1px dashed #444444;
     border-bottom: 1px dashed #444444;
-    margin: 6px 0; }
+    padding: 6px 0; }
   footer .smallback {
     background: url(../images/white_wall.png);
     height: 10px;

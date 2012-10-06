@@ -28,7 +28,10 @@ p, ul, input, textarea,label {
 	@include font-size(0.9);
 
 }
-p { margin-top: 10px;}
+p { 
+	margin-top: 16px;
+	line-height: 1.4rem;
+}
 
 h2, h3, h4, h5, h5, h6 {
 	font-family: 'Raleway', sans-serif;	
@@ -194,6 +197,7 @@ input.button {
 	}
 	.skills { margin-top: 45px;}
 }
+#about { padding-bottom: 100px;}
 #portfolio, #intro {
 	background:url(../images/white_wall.png);
 
@@ -315,8 +319,6 @@ nav{
 /* Footer */
 footer {
 	background: url(../images/dark_wall.jpg);
-	/*position: fixed;*/
-	/*bottom:0;*/
 	width: 100%;
 	z-index: 9999999;
 
@@ -325,7 +327,7 @@ footer {
 	.wrapper {
 		border-top: 1px dashed #444444;
 		border-bottom: 1px dashed #444444;
-		margin: 6px 0;
+		padding: 6px 0;
 	}
 
 	.smallback {
