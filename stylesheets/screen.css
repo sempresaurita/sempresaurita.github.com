@@ -381,12 +381,11 @@ body {
   padding: 3px 0 12px 0; }
 
 /* Typography */
-p, ul, input, textarea {
+p, ul, input, textarea, label {
   font-family: 'Raleway', sans-serif;
   color: #565454;
   font-size: 9px;
-  font-size: 0.9rem;
-  line-height: 19px; }
+  font-size: 0.9rem; }
 
 p {
   margin-bottom: 10px; }
@@ -396,11 +395,10 @@ h2, h3, h4, h5, h5, h6 {
   font-size: 11px;
   font-size: 1.1rem;
   color: #303030;
-  font-weight: 600;
-  line-height: 24px; }
+  font-weight: 600; }
 
 h1 {
-  font-family: 'Coustard', serif;
+  font-family: 'Crete Round', serif;
   font-size: 23px;
   font-size: 2.3rem; }
 
@@ -455,7 +453,7 @@ input.button {
 /* Buttons */
 .button {
   border-radius: 4px 4px 4px 4px;
-  padding: 4px 60px;
+  padding: 4px 0px;
   text-align: center;
   line-height: 35px;
   font-size: 9.5px;
@@ -477,38 +475,48 @@ input.button {
 .social ul {
   margin: 20px 0; }
   .social ul li {
+    display: inline-block; }
+  .social ul a {
     height: 49px;
     width: 49px;
-    display: inline-block;
+    display: block;
     background-position: 0 0;
     cursor: pointer;
     -webkit-transition: background 0.3s linear;
     -moz-transition: background 0.3s linear;
     -o-transition: background 0.3s linear;
     transition: background 0.3s linear; }
-    .social ul li.twitter {
+    .social ul a.twitter {
       background: url(../images/twitter-icon.png) no-repeat; }
-    .social ul li.skype {
+    .social ul a.skype {
       background: url(../images/skype-icon.png) no-repeat; }
-    .social ul li.linkedin {
+    .social ul a.linkedin {
       background: url(../images/linkedin-icon.png) no-repeat; }
-    .social ul li.facebook {
+    .social ul a.facebook {
       background: url(../images/fb-icon.png) no-repeat; }
-    .social ul li:hover {
+    .social ul a:hover {
       background-position: 0 -50px; }
 .social.small ul {
   margin: 0; }
-  .social.small ul li {
+  .social.small ul a {
     height: 31px;
     width: 34px; }
-    .social.small ul li.github {
+    .social.small ul a.github {
       background: url(../images/github-icon.png) no-repeat; }
-    .social.small ul li.twitter {
+    .social.small ul a.twitter {
       background: url(../images/twitter-small-icon.png) no-repeat; }
-    .social.small ul li.linkedin {
+    .social.small ul a.linkedin {
       background: url(../images/linkedin-small-icon.png) no-repeat; }
-    .social.small ul li:hover {
+    .social.small ul a:hover {
       background-position: 0 -37px; }
+
+.email {
+  background: url(../images/email-icon.png) no-repeat 0 3px;
+  height: 12px;
+  width: 15px;
+  display: block;
+  padding-left: 20px;
+  padding-bottom: 5px; }
 
 /* Slides */
 .slide {
@@ -519,35 +527,44 @@ input.button {
 
 #second, #fifth {
   background: url(../images/dark_wall.jpg); }
-  #second p, #fifth p {
+  #second p, #second label, #second input, #second textarea, #fifth p, #fifth label, #fifth input, #fifth textarea {
     color: #DBD9D9; }
   #second h1, #second h2, #second h3, #second h4, #second h5, #second h6, #fifth h1, #fifth h2, #fifth h3, #fifth h4, #fifth h5, #fifth h6 {
     color: #4B9982; }
+  #second .skills, #fifth .skills {
+    margin-top: 45px; }
 
 #third, #intro {
   background: url(../images/white_wall.png); }
   #third h1, #third h2, #third h3, #third h4, #third h5, #third h6, #intro h1, #intro h2, #intro h3, #intro h4, #intro h5, #intro h6 {
     color: #282727; }
 
+.bg {
+  bottom: 0;
+  height: 600px;
+  width: 100%;
+  margin: 0 auto;
+  background: url(../images/berlin-bg.png) bottom center fixed repeat-x;
+  position: absolute;
+  z-index: 0;
+  opacity: 0.7; }
+
 /* Intro */
 #intro h1 {
-  color: #4B9982; }
+  color: #4B9982;
+  font-size: 50px;
+  font-size: 5rem; }
 #intro .emphasy {
   text-align: center; }
 #intro .title {
-  margin: 30px 0; }
+  margin: 30px 0;
+  font-size: 20px;
+  font-size: 2rem; }
 #intro h3 {
-  font-size: 11px;
-  font-size: 1.1rem; }
-
-.bg {
-  bottom: 0;
-  height: 1200px;
-  width: 1700px;
-  margin: 0 auto;
-  background: url(../images/berlin-bg.png) 50% 320px fixed no-repeat;
-  position: absolute;
-  z-index: 0; }
+  font-size: 9.5px;
+  font-size: 0.95rem; }
+#intro .bg {
+  opacity: 0.2; }
 
 /* Skills */
 .imagebox {
@@ -628,8 +645,8 @@ nav {
 /* Footer */
 footer {
   background: url(../images/dark_wall.jpg);
-  position: fixed;
-  bottom: 0;
+  /*position: fixed;*/
+  /*bottom:0;*/
   width: 100%;
   z-index: 9999999; }
   footer p {
@@ -654,7 +671,7 @@ footer {
     width: 100%; }
     .row > [class^="span-"] {
       float: none;
-      margin: 0;
+      margin: 0 0 30px;
       width: auto; }
 
   nav {

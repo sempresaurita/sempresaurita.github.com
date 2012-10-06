@@ -21,24 +21,23 @@ body {
 .row { padding: 3px 0 12px 0;}
 /* Typography */
 
-p, ul, input, textarea {
+p, ul, input, textarea,label {
 	font-family: 'Raleway', sans-serif;
 	color: #565454;
 	@include font-size(0.9);
-	line-height: 19px;
 
 }
 p { margin-bottom: 10px;}
+
 h2, h3, h4, h5, h5, h6 {
 	font-family: 'Raleway', sans-serif;	
 	@include font-size(1.1);
 	color: #303030;
 	font-weight: 600; 
-	line-height: 24px;
 }
 
 h1 {	
-	font-family:'Coustard', serif; 
+	font-family:'Crete Round', serif; 
 	@include font-size(2.3);
 }
 
@@ -95,7 +94,7 @@ input.button {
 /* Buttons */
 .button {
 	border-radius: 4px 4px 4px 4px;
-	padding: 4px 60px;
+	padding: 4px 0px;
     text-align: center;
     line-height: 35px;
     @include font-size(0.95);
@@ -118,11 +117,11 @@ input.button {
 .social {
 	ul {
 		margin: 20px 0;
-
-		li {
+		li { display: inline-block;}
+		a {
 			height: 49px;
 			width: 49px;
-			display: inline-block;
+			display: block;
 			background-position: 0 0;
 			cursor: pointer;
 			-webkit-transition: background 0.3s linear;
@@ -149,7 +148,7 @@ input.button {
 	}
 	&.small ul {
 		margin: 0;
-		li {
+		a {
 			height: 31px;
 			width: 34px;
 			&.github {
@@ -168,6 +167,14 @@ input.button {
 	}
 	
 }
+.email {
+	background:url(../images/email-icon.png) no-repeat 0 3px;
+	height: 12px;
+	width: 15px;
+	display: block;
+	padding-left: 20px;
+	padding-bottom: 5px;
+}
 /* Slides */
 .slide {
 	min-height: 100%;
@@ -179,11 +186,12 @@ input.button {
 #second, #fifth {
 	background: url(../images/dark_wall.jpg);
 
-	p { color: #DBD9D9;}
+	p, label, input, textarea { color: #DBD9D9;}
 
 	h1, h2, h3, h4, h5, h6 {
 		color: #4B9982;
 	}
+	.skills { margin-top: 45px;}
 }
 #third, #intro {
 	background:url(../images/white_wall.png);
@@ -191,24 +199,32 @@ input.button {
 	h1, h2, h3, h4, h5, h6 { color: #282727;  
 	}
 }
+.bg {
+	bottom:0;
+	height: 600px;
+	width: 100%;
+	margin: 0 auto;
+	background: url(../images/berlin-bg.png) bottom center fixed repeat-x;
+	position: absolute;
+	z-index: 0;
+	opacity: 0.7;
+}
+
 /* Intro */
 
 #intro {
-	h1 { color: #4B9982;}
+	h1 { color: #4B9982; 
+		 @include font-size(5);
+	}
 	.emphasy {
 		text-align: center;
 	}
-	.title { margin: 30px 0;}
-	h3 {  @include font-size(1.1); }
-}
-.bg {
-	bottom:0;
-	height: 1200px;
-	width: 1700px;
-	margin: 0 auto;
-	background: url(../images/berlin-bg.png) 50% 320px fixed no-repeat;
-	position: absolute;
-	z-index: 0;
+	.title { margin: 30px 0;
+		@include font-size(2);
+	}
+	h3 {  @include font-size(0.95); }
+
+	.bg {opacity: 0.2;}
 }
 
 /* Skills */
@@ -298,8 +314,8 @@ nav{
 /* Footer */
 footer {
 	background: url(../images/dark_wall.jpg);
-	position: fixed;
-	bottom:0;
+	/*position: fixed;*/
+	/*bottom:0;*/
 	width: 100%;
 	z-index: 9999999;
 
