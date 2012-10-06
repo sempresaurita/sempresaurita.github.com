@@ -62,13 +62,20 @@ $(function() { //when the document is ready...
 		var pos = $window.scrollTop(); //position of the scrollbar
 
 		//if the first section is in view...
+		// if($firstBG.hasClass("inview")){
+		// 	//call the newPos function and change the background position
+		// 	$firstBG.css({'backgroundPosition': newPos(0, windowHeight, pos, 500, 0)}); 
+		// 	//call the newPos function and change the second background position
+		// 	bg1.css({'backgroundPosition': newPos(50, windowHeight, pos, 690, 0.2)});
+		// }
 		if($firstBG.hasClass("inview")){
 			//call the newPos function and change the background position
-			$firstBG.css({'backgroundPosition': newPos(0, windowHeight, pos, 500, 0)}); 
+			$firstBG.css({'backgroundPosition': newPos(0, windowHeight, pos, 1800, 0)});
+			//$secondBG.css({'backgroundPosition': newPos(50, windowHeight, pos, 1550, 0.3)});
+			bg1.css({'backgroundPosition': newPos(70, windowHeight, pos, 2300, 0.25)});
 			//call the newPos function and change the second background position
-			bg1.css({'backgroundPosition': newPos(50, windowHeight, pos, 690, 0.2)});
 		}
-		
+
 		//if the second section is in view...
 		if($secondBG.hasClass("inview")){
 			//call the newPos function and change the background position
