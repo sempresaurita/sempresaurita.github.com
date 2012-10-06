@@ -7,7 +7,7 @@
 /**
  * jQuery Aliaser
  */
-(function($){
+$(function($){
 
 	/**
 	 * jQuery ScrollTo (balupton edition)
