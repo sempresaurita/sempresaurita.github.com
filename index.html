@@ -23,9 +23,9 @@
 	<nav>
 		<ul>
 			<li><a class="about" href="#intro" title="Welcome"></a></li>
-		    <li><a class="skills" href="#second" title="Skills"></a></li>
-		    <li><a class="portfolio" href="#third" title="Portfolio"></a></li>
-		    <li><a class="contact" href="#fifth" title="Contact"></a></li>
+		    <li><a class="skills" href="#about" title="About me"></a></li>
+		    <li><a class="portfolio" href="#portfolio" title="Portfolio"></a></li>
+		    <li><a class="contact" href="#contact" title="Contact"></a></li>
 		</ul>
 	</nav>
 
@@ -49,7 +49,7 @@
 			</div>
 			<div class="row emphasy">
 				<div class="span-16">
-					 <h3>I'm from Italy, but I'm living in Berlin if you want to know me better just <a href="#fifth" class="links">contact me!</a></h3>
+					 <h3>I'm from Italy, but I'm living in Berlin if you want to know me better just <a href="#contact" class="links">contact me!</a></h3>
  				</div>
 
 			</div>
@@ -68,7 +68,7 @@
 	</div> <!--#intro-->
 	
 
-	<div id="second" class="slide">
+	<div id="about" class="slide">
 		<div class="container">
 			<div class="story">
 				<div class="row">
@@ -78,6 +78,8 @@
 					</div>
 				</div>
 				<div class="row">
+					<div class="span-4">
+					</div>
 					<div class="span-6">
 						<h4>My life in Italy</h4>
 						<p>My name is Antonella, I'm a web designer since 10 years. I started to work in a <a href="www.colombo3000.com">web agency</a> when I was still in high shool. </p>
@@ -88,11 +90,6 @@
 						<h4>Berlin, the new life</h4>
 						<p>In love with Berlin, in 2011 I decided to close everything and to move there. </p>
 						<p>A fresh and stimulate city, perfect for designers and developers, I found immidiatly a nice company to work with, <a href="www.lieferheld.de">Lieferheld</a>, where I staid 1 year and a half, in the beginning as web designer and frontend and the last 5 months as teamleader for the new frontend <a href="www.deliveryhero.com.au">platform</a> now I decided to have new challenges and I'm working for <a href="www.kaufda.de">Kaufda</a> as web and mobile designer and I'm working as freelancer as product designer and frontend.</p>
-					</div>
-					<div class="span-4">
-						<!-- <a class="twitter-timeline" href="https://twitter.com/antonellatezza" data-widget-id="253939648072663040">Tweets by @antonellatezza</a>
-						<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
- -->
 					</div>
 				</div>
 				<div class="row">
@@ -135,7 +132,7 @@
 		</div>
 	</div> <!--#second-->
 	
-	<div id="third" class="slide">
+	<div id="portfolio" class="slide">
 		<div class="container">
 			<div class="story">
 				<div class="row">
@@ -205,7 +202,7 @@
 	    </div> <!--.story-->
 	</div> <!--#third-->
 	
-	<div id="fifth" class="slide">
+	<div id="contact" class="slide">
 		<div class="container">
 			<div class="story">
 			    <div class="row">
@@ -235,7 +232,7 @@
 		</div>
 	    <div class="bg"></div>	
 
-	</div> <!--#fifth-->
+	</div> <!--#contact-->
 	
 	<div class="back"></div>
 	<footer>
@@ -271,6 +268,32 @@
 <script src="js/smooth-scroll.js" type="text/javascript"></script>
 <script src="js/smooth-scroll-ios.js" type="text/javascript"></script>
 <script type="text/javascript" src="js/parallax.js"></script>
-
+<script type="text/javascript" src="js/tooltip.js"></script>
+	<script>
+		$('nav a[title]').tooltipsy({
+			hide: function (e, $el) {
+		        $el.hide();
+		    },
+		    offset: [-20, 8]
+		    // show: function (e, $el) {
+		    //     $el.css({
+		    //         'left': parseInt($el[0].style.left.replace(/[a-z]/g, '')) - 50 + 'px',
+		    //         'opacity': '0.0',
+		    //         'display': 'block'
+		    //     }).animate({
+		    //         'left': parseInt($el[0].style.left.replace(/[a-z]/g, '')) + 50 + 'px',
+		    //         'opacity': '1.0'
+		    //     }, 300);
+		    // },
+		    // hide: function (e, $el) {
+		    //     $el.slideUp(100);
+		    // },
+		});
+		// $('nav a[title]').tooltipsy({
+		//     hide: function (e, $el) {
+		//         $el.hide();
+		//     }
+		// });
+	</script>
 </body>
 </html>

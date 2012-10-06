@@ -18,8 +18,8 @@ $(function() { //when the document is ready...
 	var $window = $(window);
 	var $firstBG = $('#intro');
 	var bg1 = $("#intro .bg");
-	var $secondBG = $('#fifth');
-	var bg2 = $("#fifth .bg");
+	var $secondBG = $('#contact');
+	var bg2 = $("#contact .bg");
 	var $thirdBG = $('#');
 	var $fourthBG = $('#');
 	
@@ -27,7 +27,7 @@ $(function() { //when the document is ready...
 	
 	
 	//apply the class "inview" to a section that is in the viewport
-	$('#intro, #fifth').bind('inview', function (event, visible) {
+	$('#intro, #contact').bind('inview', function (event, visible) {
 			if (visible == true) {
 			$(this).addClass("inview");
 			} else {
@@ -61,13 +61,6 @@ $(function() { //when the document is ready...
 	function Move(){ 
 		var pos = $window.scrollTop(); //position of the scrollbar
 
-		//if the first section is in view...
-		// if($firstBG.hasClass("inview")){
-		// 	//call the newPos function and change the background position
-		// 	$firstBG.css({'backgroundPosition': newPos(0, windowHeight, pos, 500, 0)}); 
-		// 	//call the newPos function and change the second background position
-		// 	bg1.css({'backgroundPosition': newPos(50, windowHeight, pos, 690, 0.2)});
-		// }
 		if($firstBG.hasClass("inview")){
 			//call the newPos function and change the background position
 			$firstBG.css({'backgroundPosition': newPos(0, windowHeight, pos, 1800, 0)});

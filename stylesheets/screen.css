@@ -235,133 +235,29 @@ textarea {
 .offset-15 {
   margin-left: 1050px; }
 
-.tabs {
-  position: relative; }
-
-.tabs input {
-  position: absolute;
-  z-index: 1000;
-  width: 120px;
-  height: 40px;
-  left: 0px;
-  top: 0px;
-  opacity: 0;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-  filter: alpha(opacity=0);
-  cursor: pointer; }
-
-.tabs input#tab-2 {
-  left: 120px; }
-
-.tabs input#tab-3 {
-  left: 240px; }
-
-.tabs input#tab-4 {
-  left: 360px; }
-
-.tabs label {
-  background: #5ba4a4;
-  background: -moz-linear-gradient(top, #5ba4a4 0%, #4e8c8a 100%);
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #5ba4a4), color-stop(100%, #4e8c8a));
-  background: -webkit-linear-gradient(top, #5ba4a4 0%, #4e8c8a 100%);
-  background: -o-linear-gradient(top, #5ba4a4 0%, #4e8c8a 100%);
-  background: -ms-linear-gradient(top, #5ba4a4 0%, #4e8c8a 100%);
-  background: linear-gradient(top, #5ba4a4 0%, #4e8c8a 100%);
-  line-height: 40px;
-  height: 40px;
-  position: relative;
-  padding: 0 20px;
-  float: left;
-  display: block;
-  width: 80px;
-  color: #385c5b;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  font-weight: bold;
+.tooltipsy {
+  position: fixed;
+  padding: 6px 10px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
   text-align: center;
-  text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.3);
-  border-radius: 3px 3px 0 0;
-  box-shadow: 2px 0 2px rgba(0, 0, 0, 0.1), -2px 0 2px rgba(0, 0, 0, 0.1); }
+  box-shadow: 0 0 7px black;
+  text-shadow: none;
+  font: bold 12px 'Raleway',sans-serif;
+  text-decoration: none;
+  background: #282727;
+  color: #e2e2e2; }
+  .tooltipsy:after {
+    content: '';
+    position: absolute;
+    border: 10px solid transparent;
+    border-left-color: #282727;
+    top: -10px;
+    right: 5px;
+    z-index: -1; }
 
-.tabs label:after {
-  content: '';
-  background: #fff;
-  position: absolute;
-  bottom: -2px;
-  left: 0;
-  width: 100%;
-  height: 2px;
-  display: block; }
-
-.tabs input:hover + label {
-  background: #5ba4a4; }
-
-.tabs label:first-of-type {
-  z-index: 4;
-  box-shadow: 2px 0 2px rgba(0, 0, 0, 0.1); }
-
-.tab-label-2 {
-  z-index: 3; }
-
-.tab-label-3 {
-  z-index: 2; }
-
-.tab-label-4 {
-  z-index: 1; }
-
-.tabs input:checked + label {
-  background: #fff;
-  z-index: 6; }
-
-.clear-shadow {
-  clear: both; }
-
-.content {
-  position: relative;
-  /*    width: 100%;
-  	height: 370px;
-  */
-  z-index: 5; }
-
-.content div {
-  position: absolute;
-  top: 0;
-  left: 0;
-  padding: 10px 40px;
-  z-index: 1;
-  opacity: 0;
-  -webkit-transition: opacity linear 0.1s;
-  -moz-transition: opacity linear 0.1s;
-  -o-transition: opacity linear 0.1s;
-  -ms-transition: opacity linear 0.1s;
-  transition: opacity linear 0.1s; }
-
-.tabs input.tab-selector-1:checked ~ .content .content-1,
-.tabs input.tab-selector-2:checked ~ .content .content-2,
-.tabs input.tab-selector-3:checked ~ .content .content-3,
-.tabs input.tab-selector-4:checked ~ .content .content-4 {
-  z-index: 100;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
-  filter: alpha(opacity=100);
-  opacity: 1;
-  -webkit-transition: opacity ease-out 0.2s 0.1s;
-  -moz-transition: opacity ease-out 0.2s 0.1s;
-  -o-transition: opacity ease-out 0.2s 0.1s;
-  -ms-transition: opacity ease-out 0.2s 0.1s;
-  transition: opacity ease-out 0.2s 0.1s; }
-
-.content div h2,
-.content div h3 {
-  color: #398080; }
-
-.content div p {
-  line-height: 22px;
-  text-align: left;
-  margin: 0;
-  color: #777;
-  padding-left: 15px;
-  border-left: 8px solid rgba(63, 148, 148, 0.1); }
-
+/*@import "lib/tabs/tabs";*/
 /* General */
 html {
   height: 100%; }
@@ -525,18 +421,18 @@ input.button {
   position: relative;
   padding-top: 150px; }
 
-#second, #fifth {
+#about, #contact {
   background: url(../images/dark_wall.jpg); }
-  #second p, #second label, #second input, #second textarea, #fifth p, #fifth label, #fifth input, #fifth textarea {
+  #about p, #about label, #about input, #about textarea, #contact p, #contact label, #contact input, #contact textarea {
     color: #DBD9D9; }
-  #second h1, #second h2, #second h3, #second h4, #second h5, #second h6, #fifth h1, #fifth h2, #fifth h3, #fifth h4, #fifth h5, #fifth h6 {
+  #about h1, #about h2, #about h3, #about h4, #about h5, #about h6, #contact h1, #contact h2, #contact h3, #contact h4, #contact h5, #contact h6 {
     color: #4B9982; }
-  #second .skills, #fifth .skills {
+  #about .skills, #contact .skills {
     margin-top: 45px; }
 
-#third, #intro {
+#portfolio, #intro {
   background: url(../images/white_wall.png); }
-  #third h1, #third h2, #third h3, #third h4, #third h5, #third h6, #intro h1, #intro h2, #intro h3, #intro h4, #intro h5, #intro h6 {
+  #portfolio h1, #portfolio h2, #portfolio h3, #portfolio h4, #portfolio h5, #portfolio h6, #intro h1, #intro h2, #intro h3, #intro h4, #intro h5, #intro h6 {
     color: #282727; }
 
 .bg {

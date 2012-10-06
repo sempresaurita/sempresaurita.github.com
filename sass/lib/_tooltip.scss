@@ -1,0 +1,24 @@
+.tooltipsy {
+	position: fixed;
+	padding: 6px 10px; 
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	text-align: center;
+	box-shadow: 0 0 7px black;
+	text-shadow: none;
+	font: bold 12px 'Raleway',sans-serif;
+  	text-decoration: none;
+  	background: #282727;
+  	color: #e2e2e2; 
+
+  	&:after {
+	  	content: '';
+	    position: absolute;
+	    border: 10px solid transparent;
+	    border-left-color: #282727;
+	    top: -10px;
+	    right: 5px;
+	    z-index: -1;
+  	}
+}

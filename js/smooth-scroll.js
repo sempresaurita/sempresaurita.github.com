@@ -19,7 +19,7 @@ $(function() {
         var targetOffset = $target.offset().top;
         $(this).click(function(event) {
           event.preventDefault();
-          $(scrollElem).animate({scrollTop: targetOffset}, 1500, function() { // scroll speed
+          $(scrollElem).animate({scrollTop: targetOffset}, 1000, function() { // scroll speed
             location.hash = target;
           });
         });

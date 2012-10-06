@@ -1,5 +1,6 @@
 @import "lib/cheeky/cheeky";
-@import "lib/tabs/tabs";
+@import "lib/tooltip";
+/*@import "lib/tabs/tabs";*/
 
 @mixin font-size($sizeValue: 1.6){
   font-size: ($sizeValue * 10) + px;
@@ -183,7 +184,7 @@ input.button {
 	padding-top: 150px;
 }
 
-#second, #fifth {
+#about, #contact {
 	background: url(../images/dark_wall.jpg);
 
 	p, label, input, textarea { color: #DBD9D9;}
@@ -193,7 +194,7 @@ input.button {
 	}
 	.skills { margin-top: 45px;}
 }
-#third, #intro {
+#portfolio, #intro {
 	background:url(../images/white_wall.png);
 
 	h1, h2, h3, h4, h5, h6 { color: #282727;  
