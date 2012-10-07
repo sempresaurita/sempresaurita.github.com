@@ -19,6 +19,9 @@ $(function() {
         var targetOffset = $target.offset().top;
         $(this).click(function(event) {
           event.preventDefault();
+          $('nav a').removeClass('current');
+          $(this).addClass('current');
+
           $(scrollElem).animate({scrollTop: targetOffset}, 1000, function() { // scroll speed
             location.hash = target;
           });
