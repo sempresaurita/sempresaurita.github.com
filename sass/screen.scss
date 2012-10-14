@@ -1,5 +1,7 @@
 @import "lib/cheeky/cheeky";
 @import "lib/tooltip";
+@import "lib/slider";
+
 /*@import "lib/tabs/tabs";*/
 
 @mixin font-size($sizeValue: 1.6){
@@ -7,6 +9,7 @@
   font-size: $sizeValue + rem;
 }
 /* General */
+*:focus { outline: none;}
 html { height: 100%;}
 body {
 	background:url(../images/white_wall.png);
@@ -57,6 +60,10 @@ a {
 	color: #5bab93;
 	text-decoration: none;
 	cursor: pointer;
+	-webkit-transition: color 0.3s linear;
+	-moz-transition: color 0.3s linear;
+	-o-transition: color 0.3s linear;
+	transition: color 0.3s linear;
 
 	&:hover {
 		color: darken(#5bab93, 8%);
@@ -86,6 +93,17 @@ input, textarea {
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
 	border-radius: 5px;
+	-webkit-transition: background 0.3s linear;
+	-moz-transition: background 0.3s linear;
+	-o-transition: background 0.3s linear;
+	transition: background 0.3s linear;
+
+	&:hover {
+		background-color: darken(#282727, 1%);
+	}
+	&:focus {
+		background-color: darken(#282727, 3%);
+	}
 
 }
 
@@ -111,11 +129,18 @@ input.button {
     color: #FFFFFF;
     cursor: pointer;
     text-decoration: none;
+	-webkit-transition: background 0.2s linear;
+	-moz-transition: background 0.2s linear;
+	-o-transition: background 0.2s linear;
+	transition: background 0.2s linear;
 
     &:hover {
     	background: none repeat scroll 0 0 #3e8e78;
     	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12) inset;
     }
+}
+::-webkit-validation-bubble-message {
+    padding: 1em;
 }
 /* Icons */
 .social {
@@ -172,7 +197,7 @@ input.button {
 	
 }
 .email {
-	background:url(../images/email-icon.png) no-repeat 0 3px;
+	background:url(../images/email-icon.png) no-repeat 0 5px;
 	height: 12px;
 	width: 15px;
 	display: block;
@@ -263,6 +288,12 @@ input.button {
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
 	border-radius: 5px;
+
+	img {
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	}
 }
 .line {
 	height: 2px;
@@ -296,6 +327,8 @@ nav{
 	right: 50px;
 	padding-left: 28px;
 	z-index: 100000;
+
+	ul { margin-left: 12px;}
 
 	li {
 		display: inline-block;
