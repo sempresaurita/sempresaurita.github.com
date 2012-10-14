@@ -289,7 +289,7 @@ In the mark there are four cards like in the memory game, in this game in fact t
 						<p><a class="email" href="">antonellatezza@gmail.com</a></p>
 		        	</div>
 					<div class="span-8 offset-2">
-			        	<form>
+			        	<form id="contact-page" action="/send-email" method="POST">
 			        		<fieldset>
 			        			<label for="name">Your Name</label>
 			        			<input name="name" type="text" required>
@@ -300,6 +300,7 @@ In the mark there are four cards like in the memory game, in this game in fact t
 			        		</fieldset>
 			        		<input class="button" type="submit" value="Ping!">
 			        	</form>
+			        	<p class="thx"></p>
 			        </div>
 			    </div>
 		    </div> <!--.story-->

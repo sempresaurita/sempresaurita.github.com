@@ -131,5 +131,20 @@ $(function() { //when the document is ready...
 	  	slideshow: false,
 	    animation: "slide"
 	  });
-	
+
+	$('#contact-page').submit(function(e) {
+		e.preventDefault();
+
+		var data = {
+			name: $('[name=name]').val(), 
+			email: $('[name=email]').val(),
+			message: $('[name=message]').val()
+		};
+
+		$.post('/send-email', data, function(data) {
+			$('[name=name], [name=email], [name=message]').val('');
+
+		  	$('.thx').html('Thank you! I will contact you soon');
+		});
+	})
 });
