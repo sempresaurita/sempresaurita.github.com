@@ -28,28 +28,13 @@
 	<script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
 	<script type="text/javascript" src="js/modernizr.custom.04022.js"></script>
 	<script type="text/javascript" src="js/parallax.js"></script>
-
-	<script>
-    $(function () {
-		$('nav a').click(function(e) {
-        	e.preventDefault();
-        	var link = this;
-        	$.smoothScroll({
-          		scrollTarget: link.hash
-        	});
-      	});
-      	$('nav a[title]').tooltipsy({
-			hide: function (e, $el) {
-		        $el.hide();
-		    },
-		    offset: [-20, 8]
-		});
-		$('.flexslider').flexslider({
-		  	slideshow: false,
-		    animation: "slide"
-		  });
-	});
-	</script>
+	
+	<!-- Favicons
+	================================================== -->
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
 </head>
 
 <body lang="en">

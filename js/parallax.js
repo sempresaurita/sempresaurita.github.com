@@ -12,8 +12,12 @@ http://www.gnu.org/licenses/gpl.html
 */
 
 $(function() { //when the document is ready...
-	// redrawDotNav();
-
+  	$('nav a[title]').tooltipsy({
+		hide: function (e, $el) {
+	        $el.hide();
+	    },
+	    offset: [-20, 8]
+	});
 	//save selectors as variables to increase performance
 	var $window = $(window);
 	var $firstBG = $('#intro');
@@ -23,16 +27,10 @@ $(function() { //when the document is ready...
 
 	var $fourthBG = $('#contact');
 	var bg4 = $("#contact .bg");
-
 	
 	var windowHeight = $window.height(); //get the height of the window
-	
-	
-	//apply the class "inview" to a section that is in the viewport
 
-	$('#intro, #about, #portfolio, #contact').bind('inview', function (event, visible) {
-		console.log(this.id, visible);
-
+	var scrollHandler = function (event, visible) {
 		if (visible) {
 			$(this).addClass("inview");
 
@@ -40,38 +38,11 @@ $(function() { //when the document is ready...
 			$('nav a.' + this.id).addClass("current");
 		} else {
 			$(this).removeClass("inview");
-			
-		}
-	});
-/*
-	function CheckthisOut(){
-
-		if($("#intro").hasClass("inview")){
-			$('nav a.intro').addClass("current");
-		} else { 
-		    $('nav a.intro').removeClass("current");
-		}
-
-		if($("#about").hasClass("inview")){
-			$('nav a.about').addClass("current");
-		} else { 
-		    $('nav a.about').removeClass("current");
-		}
-
-		if($("#portfolio").hasClass("inview")){
-			$('nav a.portfolio').addClass("current");
-		} else { 
-		    $('nav a.portfolio').removeClass("current");
-		}
-
-		if($("#contact").hasClass("inview")){
-			$('nav a.contact').addClass("current");
-		} else { 
-		    $('nav a.contact').removeClass("current");
 		}
 	}
-*/	
-			
+
+	$('#intro, #about, #portfolio, #contact').bind('inview', scrollHandler);
+
 	//function that places the navigation in the center of the window
 	function RepositionNav(){
 		var windowHeight = $window.height(); //get the height of the window
@@ -89,8 +60,6 @@ $(function() { //when the document is ready...
 	//function to be called whenever the window is scrolled or resized
 	function Move(){ 
 		var pos = $window.scrollTop(); //position of the scrollbar
-
-		console.log(windowHeight);
 		
 		if($firstBG.hasClass("inview")){
 			//call the newPos function and change the background position
@@ -141,5 +110,26 @@ $(function() { //when the document is ready...
 		Move(); //move the background images in relation to the movement of the scrollbar
 	});
 
+	$('nav a').click(function(e) {
+    	e.preventDefault();
+    	$('nav a').removeClass('current');
+    	$(this).addClass('current');
+
+		$('#intro, #about, #portfolio, #contact').unbind('inview');
+    	var link = this;
+    	$.smoothScroll({
+      		scrollTarget: link.hash,
+      		easing: 'swing',
+  			speed: 800,
+  			afterScroll: function () {
+  				$('#intro, #about, #portfolio, #contact').bind('inview', scrollHandler);
+  			}
+    	});
+
+  	});
+	$('.flexslider').flexslider({
+	  	slideshow: false,
+	    animation: "slide"
+	  });
 	
 });
