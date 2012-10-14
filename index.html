@@ -19,8 +19,37 @@
 	<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
 
-<link href='http://fonts.googleapis.com/css?family=Crete+Round|Raleway:400,600' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Crete+Round|Raleway:400,600' rel='stylesheet' type='text/css'>
 
+	<script src="js/jquery-1.8.2.min.js" type="text/javascript"></script>
+	<script src="js/jquery.inview.js" type="text/javascript"></script>
+	<script src="js/jquery.smooth-scroll.min.js" type="text/javascript"></script>
+	<script type="text/javascript" src="js/tooltip.js"></script>
+	<script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
+	<script type="text/javascript" src="js/modernizr.custom.04022.js"></script>
+	<script type="text/javascript" src="js/parallax.js"></script>
+
+	<script>
+    $(function () {
+		$('nav a').click(function(e) {
+        	e.preventDefault();
+        	var link = this;
+        	$.smoothScroll({
+          		scrollTarget: link.hash
+        	});
+      	});
+      	$('nav a[title]').tooltipsy({
+			hide: function (e, $el) {
+		        $el.hide();
+		    },
+		    offset: [-20, 8]
+		});
+		$('.flexslider').flexslider({
+		  	slideshow: false,
+		    animation: "slide"
+		  });
+	});
+	</script>
 </head>
 
 <body lang="en">
@@ -32,9 +61,6 @@
 		    <li><a class="contact" href="#contact" title="Contact"></a></li>
 		</ul>
 	</nav>
-
-	<div id="back"></div>
-
 
 	<div id="intro" class="slide">
         <div class="bg"></div>
@@ -86,14 +112,14 @@
 					</div>
 					<div class="span-6">
 						<h4>My life in Italy</h4>
-						<p>My name is Antonella, I'm working as web designer since 10 years. When i was still going to high school I started to work in a <a href="www.colombo3000.com">web agency</a> </p>
-						<p>I went to the fine art academy, and afterwards I started to work as freelancer in Italy. I was teacher for two years in a <a href="www.ipsconsulting.it">privat school</a> and I teached a Web course of 90 hours.</p>
-						<p>I worked with <a href="http://www.terzomillennium.net/">communication agencies</a> as graphic desinger, in a<a href="www.colombo3000.com">web agency</a> as art director and web designer and also i did some projects as toy designer.</p>
+						<p>My name is Antonella, I'm working as web designer since 10 years. When i was still going to high school I started to work in a <a href="http://www.colombo3000.com">web agency</a> </p>
+						<p>I went to the fine art academy, and afterwards I started to work as freelancer in Italy. I was teacher for two years in a <a href="http://www.ipsconsulting.it">privat school</a> and I teached a Web course of 90 hours.</p>
+						<p>I worked with <a href="http://www.terzomillennium.net/">communication agencies</a> as graphic desinger, in a <a href="www.colombo3000.com">web agency</a> as art director and web designer and also i did some projects as toy designer.</p>
 					</div>
 					<div class="span-6">
 						<h4>Berlin, the new life</h4>
 						<p>In love with Berlin, in 2011 I decided to close everything and to move there. </p>
-						<p>A fresh and stimulate city, perfect for designers and developers, I found immidiatly a nice company to work with, <a href="www.lieferheld.de">Lieferheld</a>, where I staid for 1 year and a half, in the beginning as web designer and frontend and the last 5 months as teamleader for the new frontend <a href="www.deliveryhero.com.au">platform</a> now I decided to give me new challenges and I'm working for <a href="www.kaufda.de">Kaufda</a> as web and mobile designer and as freelancer as product designer and frontend.</p>
+						<p>A fresh and stimulate city, perfect for designers and developers, I found immidiatly a nice company to work with, <a href="http://www.lieferheld.de">Lieferheld</a>, where I staid for 1 year and a half, in the beginning as web designer and frontend and the last 5 months as teamleader for the new frontend <a href="http://www.deliveryhero.com.au">platform</a> now I decided to give me new challenges and I'm working for <a href="http://www.kaufda.de">Kaufda</a> as web and mobile designer and as freelancer as product designer and frontend.</p>
 					</div>
 				</div>
 				<div class="row">
@@ -236,6 +262,7 @@ In the mark there are four cards like in the memory game, in this game in fact t
 			    		<p>Fratelli Falcetta is an international olive oil company.</p>
 			    		<p>In <a href="http>//www.colombo3000.com">Colombo 3000</a> as art director I develop this project, which consist into two different kind of labels, one for businesses and the other one for consumers. The idea was to communicate a new fresh company which is selling high quality olive oil from Italy to the international market.</p>
 			    		<p class="tags">
+			    			<span class="tag">art direction</span>
 			    			<span class="tag">packaging</span>
 			    			<span class="tag">label design</span>
 			    			<span class="tag">graphic design</span>
@@ -250,16 +277,16 @@ In the mark there are four cards like in the memory game, in this game in fact t
 			    			<img src="images/portfolio/falcettaoil03.jpg" alt="graphic design - label">
 					    </li>
 					    <li>
-			    			<img src="images/portfolio/falcettaoil02.jpg" alt="graphic design - label">
+			    			<img src="images/portfolio/falcettaoil02.jpg" alt="communication design">
 					    </li>
 					  </ul>
 					</div>
 		    	</div>
+		    	
 		    	<div class="row">
 			    	<div class="span-16 line">
 			    	</div>
 		    	</div>
-
 	    	</div>
 	    </div> <!--.story-->
 	</div> <!--#third-->
@@ -292,11 +319,9 @@ In the mark there are four cards like in the memory game, in this game in fact t
 			    </div>
 		    </div> <!--.story-->
 		</div>
-	    <div class="bg"></div>	
-
-	</div> <!--#contact-->
+	    <div class="bg"></div>
+	</div> 
 	
-	<div class="back"></div>
 	<footer>
 		<div class="wrapper">
 			<div class="container">
@@ -319,31 +344,5 @@ In the mark there are four cards like in the memory game, in this game in fact t
 			</div>
 		</div>
 	</footer>
-
-	<script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
-
-	<script src="js/jquery.sticky.js" type="text/javascript"></script
-
-<script type="text/javascript" src="js/modernizr.custom.04022.js"></script>
-<script src="js/jquery.inview.js" type="text/javascript"></script>
-<script src="js/smooth-scroll.js" type="text/javascript"></script>
-<script src="js/smooth-scroll-ios.js" type="text/javascript"></script>
-<script type="text/javascript" src="js/parallax.js"></script>
-<script type="text/javascript" src="js/tooltip.js"></script>
-<script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
-	<script>
-		$('nav a[title]').tooltipsy({
-			hide: function (e, $el) {
-		        $el.hide();
-		    },
-		    offset: [-20, 8]
-		});
-		$(window).load(function() {
-		  $('.flexslider').flexslider({
-		  	slideshow: false,
-		    animation: "slide"
-		  });
-		});
-	</script>
 </body>
 </html>
