@@ -64,7 +64,7 @@
 			</div>
 			<div class="row emphasy">
 				<div class="span-16">
-					 <h3>I'm from Italy, but I'm living in Berlin if you want to know me better just <a href="#contact" class="links">contact me!</a></h3>
+					 <h3>I'm from Italy, but I'm living in Berlin. If you want to know me better just <a href="#contact" class="links">contact me!</a></h3>
  				</div>
 
 			</div>
@@ -97,8 +97,8 @@
 					</div>
 					<div class="span-6">
 						<h4>My life in Italy</h4>
-						<p>My name is Antonella, I'm working as web designer since 10 years. When i was still going to high school I started to work in a <a href="http://www.colombo3000.com">web agency</a> </p>
-						<p>I went to the fine art academy, and afterwards I started to work as freelancer in Italy. I was teacher for two years in a <a href="http://www.ipsconsulting.it">privat school</a> and I teached a Web course of 90 hours.</p>
+						<p>My name is Antonella, I'm working as web designer since 10 years. When I was still going to high school I started to work in a <a href="http://www.colombo3000.com">web agency</a>.</p>
+						<p>I went to the fine Art Academy, and afterwards I started to work as freelancer in Italy. I was teacher for two years in a <a href="http://www.ipsconsulting.it">privat school</a> and I teached a Web course of 90 hours.</p>
 						<p>I worked with <a href="http://www.terzomillennium.net/">communication agencies</a> as graphic desinger, in a <a href="www.colombo3000.com">web agency</a> as art director and web designer and also i did some projects as toy designer.</p>
 					</div>
 					<div class="span-6">
