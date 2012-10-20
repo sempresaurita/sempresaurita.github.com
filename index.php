@@ -93,7 +93,8 @@
 					</div>
 				</div>
 				<div class="row">
-					<div class="span-4">
+					<div class="span-4 round">
+						<img src="images/me.jpg" alt="antonella tezza webdesigner">
 					</div>
 					<div class="span-6">
 						<h4>My life in Italy</h4>

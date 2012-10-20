@@ -352,7 +352,6 @@ html[xmlns] .slides {
   height: 30px;
   margin: -20px 0 0;
   display: block;
-  background: url(images/bg_direction_nav.png) no-repeat 0 0;
   position: absolute;
   top: 50%;
   cursor: pointer;
@@ -645,6 +644,14 @@ input.button {
     color: #4B9982; }
   #about .skills, #contact .skills {
     margin-top: 45px; }
+  #about .round img, #contact .round img {
+    /*height: 100%;*/
+    width: 90%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    display: block;
+    background: #282727;
+    padding: 10px; }
 
 #about {
   padding-bottom: 100px; }

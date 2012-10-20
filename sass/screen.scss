@@ -221,6 +221,20 @@ input.button {
 		color: #4B9982;
 	}
 	.skills { margin-top: 45px;}
+
+	.round {
+
+
+		img{
+			/*height: 100%;*/
+			width: 90%;
+			-moz-border-radius: 50%;
+			border-radius: 50%;
+			display: block;
+			background: #282727;
+			padding: 10px;
+		}
+	} 
 }
 #about { padding-bottom: 100px;}
 #portfolio, #intro {
