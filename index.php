@@ -234,6 +234,7 @@ In the mark there are four cards like in the memory game, in this game in fact t
 			    		<ul class="slides">
 			    			<li><img src="images/portfolio/deliveryhero.jpg" alt="web design - team leader"></li>
 			    			<li><img src="images/portfolio/deliveryhero02.jpg" alt="delivery hero - web designer"></li>
+			    			<li><img src="images/portfolio/deliveryhero03.jpg" alt="delivery hero - styleguide"></li>
 			    		</ul>
 			    	</div>
 		    	</div>
@@ -331,5 +332,18 @@ In the mark there are four cards like in the memory game, in this game in fact t
 			</div>
 		</div>
 	</footer>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-35648981-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
 </body>
 </html>
