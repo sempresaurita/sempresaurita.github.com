@@ -43,15 +43,6 @@ $(function() { //when the document is ready...
 
 	$('#intro, #about, #portfolio, #contact').bind('inview', scrollHandler);
 
-	//function that places the navigation in the center of the window
-	function RepositionNav(){
-		var windowHeight = $window.height(); //get the height of the window
-		// var navHeight = $('#nav').height() / 2;
-		var windowCenter = (windowHeight / 2); 
-		// var newtop = windowCenter - navHeight;
-		// $('#nav').css({"top": newtop}); //set the new top position of the navigation list
-	}
-	
 	
 	function newPos(x, windowHeight, pos, adjuster, inertia){
 		return x + "% " + (-((windowHeight + pos) - adjuster) * inertia)  + "px";
@@ -60,8 +51,9 @@ $(function() { //when the document is ready...
 	//function to be called whenever the window is scrolled or resized
 	function Move(){ 
 		var pos = $window.scrollTop(); //position of the scrollbar
-		
+		console.log('inview', $('.inview'));
 		if($firstBG.hasClass("inview")){
+			console.log('1st pos:', pos);
 			//call the newPos function and change the background position
 			$firstBG.css({'backgroundPosition': newPos(0, windowHeight, pos, 1800, 0)});
 			//$secondBG.css({'backgroundPosition': newPos(50, windowHeight, pos, 1550, 0.3)});
@@ -99,11 +91,11 @@ $(function() { //when the document is ready...
 		}
 	}
 		
-	RepositionNav(); //Reposition the Navigation to center it in the window when the script loads
+	// RepositionNav(); //Reposition the Navigation to center it in the window when the script loads
 	
 	$window.resize(function(){ //if the user resizes the window...
 		Move(); //move the background images in relation to the movement of the scrollbar
-		RepositionNav(); //reposition the navigation list so it remains vertically central
+		// RepositionNav(); //reposition the navigation list so it remains vertically central
 	});		
 	
 	$window.bind('scroll', function(){ //when the user is scrolling...
@@ -115,15 +107,11 @@ $(function() { //when the document is ready...
     	$('nav a').removeClass('current');
     	$(this).addClass('current');
 
-		$('#intro, #about, #portfolio, #contact').unbind('inview');
     	var link = this;
     	$.smoothScroll({
       		scrollTarget: link.hash,
       		easing: 'swing',
-  			speed: 800,
-  			afterScroll: function () {
-  				$('#intro, #about, #portfolio, #contact').bind('inview', scrollHandler);
-  			}
+  			speed: 800
     	});
 
   	});
