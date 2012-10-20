@@ -105,7 +105,7 @@
 					<div class="span-6">
 						<h4>Berlin, the new life</h4>
 						<p>In love with Berlin, in 2011 I decided to close my italian business and to move here. </p>
-						<p>A fresh and stimulate city, perfect for designers and developers, I found immidiatly a nice company to work with, <a href="http://www.lieferheld.de">Lieferheld</a>, where I staid for 1 year and a half, in the beginning as web designer and frontend and the last 5 months as teamleader for the new frontend <a href="http://www.deliveryhero.com.au">platform</a> now I decided to give me new challenges and I'm working for <a href="http://www.kaufda.de">Kaufda</a> as web and mobile designer and as freelancer as product designer and frontend.</p>
+						<p>A fresh and stimulate city, perfect for designers and developers, I found immediately a nice company to work with, <a href="http://www.lieferheld.de">Lieferheld</a>, where I staid for 1 year and a half, in the beginning as web designer and frontend and the last 5 months as teamleader for the new frontend <a href="http://www.deliveryhero.com.au">platform</a>. Now I decided to give me new challenges and I'm working for <a href="http://www.kaufda.de">Kaufda</a> as web and mobile designer and as freelancer as product designer and frontend.</p>
 					</div>
 				</div>
 				<div class="row">
