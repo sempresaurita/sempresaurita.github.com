@@ -288,7 +288,17 @@ In the mark there are four cards like in the memory game, in this game in fact t
 					<div class="span-4">
 						<p>I would love to work with you on your next project. Get in touch with me at any time and we can discuss your needs.</p>
 
-						<p><a class="email" href="mailto:antonellatezza@gmail.com">antonellatezza@gmail.com</a></p>
+						<p>
+							<script type="text/javascript">
+							<!--
+							var name = "antonellatezza";
+							var domain = "gmail.com";
+							document.write('<a class="email" href=\"mailto:' + name + '@' + domain + '\">');
+							document.write(name + '@' + domain + '</a>');
+							// -->
+
+							</script>
+						</p>
 		        	</div>
 					<div class="span-8 offset-2">
 			        	<form id="contact-page" action="/send-email" method="POST">
@@ -343,13 +353,6 @@ In the mark there are four cards like in the memory game, in this game in fact t
     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
-
-	<!--
-	var name = "antonellatezza";
-	var domain = "gmail.com";
-	document.write('<a href=\"mailto:' + name + '@' + domain + '\">');
-	document.write(name + '@' + domain + '</a>');
-	// -->
 
 </script>
 </body>
