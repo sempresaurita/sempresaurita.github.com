@@ -98,13 +98,13 @@
 					</div>
 					<div class="span-6">
 						<h4>My life in Italy</h4>
-						<p>My name is Antonella, I'm working as web designer since 10 years. When I was still going to high school I started to work in a <a href="http://www.colombo3000.com">web agency</a>.</p>
-						<p>I went to the fine Art Academy, and afterwards I started to work as freelancer in Italy. I was teacher for two years in a <a href="http://www.ipsconsulting.it">privat school</a> and I teached a Web course of 90 hours.</p>
+						<p>My name is Antonella, I'm working as web designer since 10 years. When I was still going to highschool I started to work in a <a href="http://www.colombo3000.com">web agency</a>.</p>
+						<p>I went to the fine Art Academy, and afterwards I started to work as freelancer in Italy. I taught for two years in a <a href="http://www.ipsconsulting.it">privat school</a> a Web course of 90 hours.</p>
 						<p>I worked with <a href="http://www.terzomillennium.net/">communication agencies</a> as graphic desinger, in a <a href="www.colombo3000.com">web agency</a> as art director and web designer and also i did some projects as toy designer.</p>
 					</div>
 					<div class="span-6">
 						<h4>Berlin, the new life</h4>
-						<p>In love with Berlin, in 2011 I decided to close everything and to move there. </p>
+						<p>In love with Berlin, in 2011 I decided to close my italian business and to move here. </p>
 						<p>A fresh and stimulate city, perfect for designers and developers, I found immidiatly a nice company to work with, <a href="http://www.lieferheld.de">Lieferheld</a>, where I staid for 1 year and a half, in the beginning as web designer and frontend and the last 5 months as teamleader for the new frontend <a href="http://www.deliveryhero.com.au">platform</a> now I decided to give me new challenges and I'm working for <a href="http://www.kaufda.de">Kaufda</a> as web and mobile designer and as freelancer as product designer and frontend.</p>
 					</div>
 				</div>
