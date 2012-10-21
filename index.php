@@ -55,8 +55,7 @@
 				<h1 class="emphasy">
 					Antonella Tezza</h1>
 					<div class="title">
-						<h2 class="emphasy">Creative web designer
-						with front-end skills. </h2>
+						<h2 class="emphasy">Creative web designer with front-end skills. </h2>
 						<h2 class="emphasy">Experience in UI and art direction.
 						</h2>
 					</div>
@@ -64,7 +63,7 @@
 			</div>
 			<div class="row emphasy">
 				<div class="span-16">
-					 <h3>I'm from Italy, but I'm living in Berlin. If you want to know me better just <a href="#contact" class="links">contact me!</a></h3>
+					 <h3>I'm from Italy, but I'm living in Berlin. If you want to know more, just <a href="#contact" class="links">contact me!</a></h3>
  				</div>
 
 			</div>
@@ -89,7 +88,7 @@
 				<div class="row">
 					<div class="span-16">
 						<h1>About me</h1>
-						<h2>My work is definitaly not a job, it's my life.</h2>
+						<h2>My work is definitely not just a job; it's my life.</h2>
 					</div>
 				</div>
 				<div class="row">
@@ -98,14 +97,14 @@
 					</div>
 					<div class="span-6">
 						<h4>My life in Italy</h4>
-						<p>My name is Antonella, I'm working as web designer since 10 years. When I was still going to highschool I started to work in a <a href="http://www.colombo3000.com">web agency</a>.</p>
-						<p>I went to the fine Art Academy, and afterwards I started to work as freelancer in Italy. I taught for two years in a <a href="http://www.ipsconsulting.it">privat school</a> a Web course of 90 hours.</p>
-						<p>I worked with <a href="http://www.terzomillennium.net/">communication agencies</a> as graphic desinger, in a <a href="www.colombo3000.com">web agency</a> as art director and web designer and also i did some projects as toy designer.</p>
+						<p>My name is Antonella. I have worked as a web designer for 10 years. When I was still attending high school, I started working in a <a href="http://www.colombo3000.com">web agency</a>.</p>
+						<p>I went to the fine art academy, and afterwards started to work as a freelancer in Italy. I was a teacher for two years in a <a href="http://www.ipsconsulting.it">privat school</a> and taught a 90-hour web course.</p>
+						<p>I worked with <a href="http://www.terzomillennium.net/">communication agencies</a> as graphic desinger, in a <a href="www.colombo3000.com">web agency</a> as an art director and web designer, and also had some projects as a toy designer.</p>
 					</div>
 					<div class="span-6">
 						<h4>Berlin, the new life</h4>
-						<p>In love with Berlin, in 2011 I decided to close my italian business and to move here. </p>
-						<p>A fresh and stimulate city, perfect for designers and developers, I found immediately a nice company to work with, <a href="http://www.lieferheld.de">Lieferheld</a>, where I staid for 1 year and a half, in the beginning as web designer and frontend and the last 5 months as teamleader for the new frontend <a href="http://www.deliveryhero.com.au">platform</a>. Now I decided to give me new challenges and I'm working for <a href="http://www.kaufda.de">Kaufda</a> as web and mobile designer and as freelancer as product designer and frontend.</p>
+						<p>In love with Berlin, I decided to stop everything and move there in 2011. </p>
+						<p>A fresh and stimulating city, perfect for designers and developers. I immediately found a nice company to work for, <a href="http://www.lieferheld.de">Lieferheld</a> where I stayed for 1,5 years. In the beginning I worked as a web designer and front-end developer, and the last 5 months as the team leader for the new front end <a href="http://www.deliveryhero.com.au">platform</a>. Now I have decided to present myself with new challenges and am working for <a href="http://www.kaufda.de">Kaufda</a> as web and mobile designer, and as a freelancer in product design and front-end development..</p>
 					</div>
 				</div>
 				<div class="row">
@@ -165,9 +164,7 @@
 		    	<div class="row">
 			    	<div class="span-4">
 			    		<h2>Brand design</h2>
-			    		<p><a href="http://www.kenhub.com/">KenHub</a> is a learnig platform for the human anatomy, the brand would like to express a new approach to learning anatomy.
-This logo reminds of the card game memory. The idea is to memorize difficult terms in an easy way, which otherwise would be really hard to remember.
-In the mark there are four cards like in the memory game, in this game in fact the match of the cards are always in pairs.</p>
+			    		<p><a href="http://www.kenhub.com/">KenHub</a>  is a platform for learning about human anatomy, and the brand wanted to express a new approach to doing so. This logo reminds of the card game memory; the idea is to memorize hard-to-remember terms in an easy way. There are four cards in the logo, just like in the memory game. In fact, in this game matching cards are always in pairs.</p>
 			    		<p class="tags">
 			    			<span class="tag">branding</span>
 			    			<span class="tag">logo</span>
@@ -198,8 +195,9 @@ In the mark there are four cards like in the memory game, in this game in fact t
 		    	<div class="row">
 			    	<div class="span-4">
 			    		<h2>Mobile design</h2>
-			    		<p>Attilium is a protype project which I started with other two developers. The idea was to create an app where you can search for movies or cinemas nearby, you could see movies reviews and reserve a seat in the cinema.</p>
-			    		<p>Attilium wanted to be an easy friendly application with a vintage style.</p>
+			    		<p>Attilium is a prototype project I started with other two developers. The idea was to create an app for searching for movies or cinemas nearby, with the possibility to movie reviews and reserve a seat in the cinema.
+			 		
+						We aspired to make Attilium an easy to use application with a vintage style.</p>
 			    		<p class="tags">
 			    			<span class="tag">mobile design</span>
 			    			<span class="tag">graphic design</span>
@@ -221,8 +219,10 @@ In the mark there are four cards like in the memory game, in this game in fact t
 		    	<div class="row">
 			    	<div class="span-4">
 			    		<h2>Web design</h2>
-			    		<p><a href="http://www.deliveryhero.com.au">Deliveryhero</a> was without any doubt one of my biggest project, I  worked as team leader to build the new frontend application, made with three different repositories (backend, javascript and sass) in a team of 10 developers.</p>
-			    		<p>I've also created an application: the styleguide, which shows the theme based on the style where is runned.</p><p>The idea was to give a tool where designers can easily see and use elements for online or offline campaign.</p>
+			    		<p><a href="http://www.deliveryhero.com.au">Deliveryhero</a> was without doubt one of my biggest projects: I worked as the team leader to build the new front-end application, made with three different repositories (back-end, JavaScript, and Sass) in a team of 10 developers.
+			 		
+I also created an application: the style guide, which shows the theme based on the style where is run.
+The idea was to provide a tool with which designers can easily see and use elements for online or offline campaigns.</p>
 			    		<p class="tags">
 			    			<span class="tag">web design</span>
 			    			<span class="tag">team leader</span>
@@ -247,7 +247,7 @@ In the mark there are four cards like in the memory game, in this game in fact t
 			    	<div class="span-4">
 			    		<h2>Offline design</h2>
 			    		<p>Fratelli Falcetta is an international olive oil company.</p>
-			    		<p>In <a href="http>//www.colombo3000.com">Colombo 3000</a> as art director I develop this project, which consist into two different kind of labels, one for businesses and the other one for consumers. The idea was to communicate a new fresh company which is selling high quality olive oil from Italy to the international market.</p>
+			    		<p>As an art director in <a href="http>//www.colombo3000.com">Colombo 3000</a> I developed this project, which consisted of two different kinds of labels: one for businesses and the other for consumers. The idea was to communicate a fresh, new company selling high-quality olive oil from Italy to the international market.</p>
 			    		<p class="tags">
 			    			<span class="tag">art direction</span>
 			    			<span class="tag">packaging</span>
@@ -286,7 +286,7 @@ In the mark there are four cards like in the memory game, in this game in fact t
 				</div>
 				<div class='row'>
 					<div class="span-4">
-						<p>I would love to work with you on your next project. Get in touch with me at any time and we can discuss your needs.</p>
+						<p>I would love to work with you on your next project. Get in touch with me any time and we can discuss your needs.</p>
 
 						<p>
 							<script type="text/javascript">
