@@ -104,7 +104,7 @@
 					<div class="span-6">
 						<h4>Berlin, the new life</h4>
 						<p>In love with Berlin, I decided to stop everything and move there in 2011. </p>
-						<p>A fresh and stimulating city, perfect for designers and developers. I immediately found a nice company to work for, <a href="http://www.lieferheld.de">Lieferheld</a> where I stayed for 1,5 years. In the beginning I worked as a web designer and front-end developer, and the last 5 months as the team leader for the new front end <a href="http://www.deliveryhero.com.au">platform</a>. Now I have decided to present myself with new challenges and am working for <a href="http://www.kaufda.de">Kaufda</a> as web and mobile designer, and as a freelancer in product design and front-end development..</p>
+						<p>A fresh and stimulating city, perfect for designers and developers. I immediately found a nice company to work for, <a href="http://www.lieferheld.de">Lieferheld</a> where I stayed for 1,5 years. In the beginning I worked as a web designer and front-end developer, and the last 5 months as the team leader for the new front end <a href="http://www.deliveryhero.com.au">platform</a>. Now I have decided to present myself with new challenges and am working for <a href="http://www.kaufda.de">Kaufda</a> as Head of interfacedesign, and as a freelancer in product design and front-end development.</p>
 					</div>
 				</div>
 				<div class="row">
@@ -195,19 +195,18 @@
 		    	<div class="row">
 			    	<div class="span-4">
 			    		<h2>Mobile design</h2>
-			    		<p>Attilium is a prototype project I started with other two developers. The idea was to create an app for searching for movies or cinemas nearby, with the possibility to movie reviews and reserve a seat in the cinema.
-			 		
-						We aspired to make Attilium an easy to use application with a vintage style.</p>
+			    		<p>My last big project for <a href="http://www.kaufda.de">Kaufda</a> was to redesign the brochure view for IOS and the new app for Android.</p>
+			    		<P>The best part of this project, was to find a commun way to communicate the brand and to give the same feeling, a easy approach which goes well in both systems.</p>
 			    		<p class="tags">
 			    			<span class="tag">mobile design</span>
-			    			<span class="tag">graphic design</span>
-			    			<span class="tag">iphone</span>
+			    			<span class="tag">IOS design</span>
+			    			<span class="tag">Android design</span>
 			    		</p>
 			    	</div>
 			    	<div class="span-11 flexslider images">
 			    		<ul class="slides">
-			    			<li><img src="images/portfolio/attilium.jpg" alt="attilium - mobile design"></li>
-			    			<li><img src="images/portfolio/attilium02.jpg" alt="attilium - mobile design"></li>
+			    			<li><img src="images/portfolio/kaufda-ipad.png" alt="kaufda - mobile design"></li>
+			    			<li><img src="images/portfolio/kaufda-android.png" alt="kaufda - mobile design"></li>
 			    		</ul>
 			    	</div>
 		    	</div>
