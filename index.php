@@ -98,13 +98,13 @@
 					<div class="span-6">
 						<h4>My life in Italy</h4>
 						<p>My name is Antonella. I have worked as a web designer for 10 years. When I was still attending high school, I started working in a <a href="http://www.colombo3000.com">web agency</a>.</p>
-						<p>I went to the fine art academy, and afterwards started to work as a freelancer in Italy. I was a teacher for two years in a <a href="http://www.ipsconsulting.it">privat school</a> and taught a 90-hour web course.</p>
-						<p>I worked with <a href="http://www.terzomillennium.net/">communication agencies</a> as graphic desinger, in a <a href="www.colombo3000.com">web agency</a> as an art director and web designer, and also had some projects as a toy designer.</p>
+						<p>I went to the fine art academy, and afterwards started to work as a freelancer in Italy. I was a teacher for two years in a <a href="http://www.ipsconsulting.it">private school</a> and taught a 90-hour web course.</p>
+						<p>I worked with <a href="http://www.terzomillennium.net/">communication agencies</a> as graphic desinger, in a <a href="http://www.colombo3000.com">web agency</a> as an art director and web designer, and also had some projects as a toy designer.</p>
 					</div>
 					<div class="span-6">
 						<h4>Berlin, the new life</h4>
 						<p>In love with Berlin, I decided to stop everything and move there in 2011. </p>
-						<p>A fresh and stimulating city, perfect for designers and developers. I immediately found a nice company to work for, <a href="http://www.lieferheld.de">Lieferheld</a> where I stayed for 1,5 years. In the beginning I worked as a web designer and front-end developer, and the last 5 months as the team leader for the new front end <a href="http://www.deliveryhero.com.au">platform</a>. Now I have decided to present myself with new challenges and am working for <a href="http://www.kaufda.de">Kaufda</a> as Head of interfacedesign, and as a freelancer in product design and front-end development.</p>
+						<p>A fresh and stimulating city, perfect for designers and developers. I immediately found a nice company to work for, <a href="http://www.lieferheld.de">Lieferheld</a> where I stayed for 1,5 years. In the beginning I worked as a web designer and front-end developer, and the last 5 months as the team leader for the new front end <a href="http://www.deliveryhero.com.au">platform</a>. Now I have decided to present myself with new challenges and am working for <a href="http://www.kaufda.de">Kaufda</a> as Head of interface design, and as a freelancer in product design and front-end development.</p>
 					</div>
 				</div>
 				<div class="row">
@@ -246,7 +246,7 @@ The idea was to provide a tool with which designers can easily see and use eleme
 			    	<div class="span-4">
 			    		<h2>Offline design</h2>
 			    		<p>Fratelli Falcetta is an international olive oil company.</p>
-			    		<p>As an art director in <a href="http>//www.colombo3000.com">Colombo 3000</a> I developed this project, which consisted of two different kinds of labels: one for businesses and the other for consumers. The idea was to communicate a fresh, new company selling high-quality olive oil from Italy to the international market.</p>
+			    		<p>As an art director in <a href="http://www.colombo3000.com">Colombo 3000</a> I developed this project, which consisted of two different kinds of labels: one for businesses and the other for consumers. The idea was to communicate a fresh, new company selling high-quality olive oil from Italy to the international market.</p>
 			    		<p class="tags">
 			    			<span class="tag">art direction</span>
 			    			<span class="tag">packaging</span>
