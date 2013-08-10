@@ -57,7 +57,7 @@ $(function() { //when the document is ready...
 			//call the newPos function and change the background position
 			$firstBG.css({'backgroundPosition': newPos(0, windowHeight, pos, 1800, 0)});
 			//$secondBG.css({'backgroundPosition': newPos(50, windowHeight, pos, 1550, 0.3)});
-			bg1.css({'backgroundPosition': newPos(70, windowHeight, pos, 2300, 0.25)});
+			bg1.css({'backgroundPosition': newPos(70, windowHeight, pos, 2000, 0.25)});
 			//call the newPos function and change the second background position
 
 		}
@@ -85,7 +85,7 @@ $(function() { //when the document is ready...
 			//call the newPos function and change the background position
 			$secondBG.css({'backgroundPosition': newPos(0, windowHeight, pos, 3916, 0)});
 			//$secondBG.css({'backgroundPosition': newPos(50, windowHeight, pos, 1550, 0.3)});
-			bg4.css({'backgroundPosition': newPos(70, windowHeight, pos, 6510, 0.25)});
+			bg4.css({'backgroundPosition': newPos(70, windowHeight, pos, 6200, 0.25)});
 			//call the newPos function and change the second background position
 
 		}

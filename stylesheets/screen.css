@@ -244,7 +244,7 @@ textarea {
   text-align: center;
   box-shadow: 0 0 7px black;
   text-shadow: none;
-  font: bold 12px "Raleway", sans-serif;
+  font: bold 12px 'Raleway',sans-serif;
   text-decoration: none;
   background: #282727;
   color: #e2e2e2; }
@@ -357,7 +357,7 @@ html[xmlns] .slides {
   cursor: pointer;
   text-indent: -9999px;
   opacity: 0;
-  -webkit-transition: all 0.3s ease; }
+  -webkit-transition: all .3s ease; }
 
 .flex-direction-nav .flex-next {
   background-position: 100% 0;
@@ -378,7 +378,7 @@ html[xmlns] .slides {
   opacity: 1; }
 
 .flex-direction-nav .flex-disabled {
-  opacity: .3!important;
+  opacity: 0.3 !important;
   filter: alpha(opacity=30);
   cursor: default; }
 
@@ -473,7 +473,7 @@ body {
 
 /* Typography */
 p, ul, input, textarea, label {
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
   color: #565454;
   font-size: 9px;
   font-size: 0.9rem; }
@@ -483,14 +483,14 @@ p {
   line-height: 1.4rem; }
 
 h2, h3, h4, h5, h5, h6 {
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-size: 11px;
   font-size: 1.1rem;
   color: #303030;
   font-weight: 600; }
 
 h1 {
-  font-family: "Crete Round", serif;
+  font-family: 'Crete Round', serif;
   font-size: 23px;
   font-size: 2.3rem; }
 
@@ -654,6 +654,9 @@ input.button {
 #about {
   padding-bottom: 100px; }
 
+#contact.slide {
+  min-height: 250px; }
+
 #portfolio, #intro {
   background: url(../images/white_wall.png); }
   #portfolio h1, #portfolio h2, #portfolio h3, #portfolio h4, #portfolio h5, #portfolio h6, #intro h1, #intro h2, #intro h3, #intro h4, #intro h5, #intro h6 {
@@ -672,8 +675,8 @@ input.button {
 /* Intro */
 #intro h1 {
   color: #4B9982;
-  font-size: 50px;
-  font-size: 5rem; }
+  font-size: 40px;
+  font-size: 4rem; }
 #intro .emphasy {
   text-align: center; }
 #intro .title {
@@ -796,8 +799,8 @@ footer {
 
 @media (max-width: 630px) {
   img {
-    width: auto!important;
-    height: auto!important;
+    width: auto !important;
+    height: auto !important;
     max-width: 100%; }
 
   .container {
@@ -817,16 +820,15 @@ footer {
     nav li {
       margin-top: 30px; } }
 @media (max-width: 320px) {
-  h1.emphasy {
-    font-size: 40px;
-    font-size: 4rem; } }
+  nav {
+    right: 10px; } }
 @media (min-width: 630px) and (max-width: 790px) {
   .container {
     width: 630px; }
 
   img {
-    width: auto!important;
-    height: auto!important;
+    width: auto !important;
+    height: auto !important;
     max-width: 100%; }
 
   .row [class^="span-"] {

@@ -6,6 +6,7 @@
 //---------------------
 //-- Stacked columns
 //---------------------
+@import "lib";
 
 @media (max-width: 630px) {
   img {
@@ -45,7 +46,7 @@
 
 @media (max-width: 320px) {
 
-h1.emphasy {  @include font-size(4); }
+  nav {   right: 10px; }
 }
 
 //---------------------

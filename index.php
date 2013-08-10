@@ -5,7 +5,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Antonella Tezza - web and mobile designer - graphic designer in Berlin</title>
-<meta name="viewport" content="width=device-width; initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link href="stylesheets/screen.css" rel="stylesheet" type="text/css" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
 <meta property='og:title' content='web and mobile designer -graphic designer in Berlin - Antonella Tezza / Graphic and Webdesign'/>
@@ -47,14 +47,14 @@
 		</ul>
 	</nav>
 
-	<div id="intro" class="slide">
+	<div id="intro" class="slide" itemtype="http://schema.org/Person">
         <div class="bg"></div>
         <div class='container'>
 			<div class="row">
 				<div class="span-16">
-				<h1 class="emphasy">
-					Antonella Tezza</h1>
-					<div class="title">
+				<h1 class="emphasy" itemscope>
+					<span itemprop="name">Antonella Tezza</span></h1>
+					<div class="title" itemprop="description">
 						<h2 class="emphasy">Creative web designer with front-end skills. </h2>
 						<h2 class="emphasy">Experience in UI and art direction.
 						</h2>
@@ -63,7 +63,7 @@
 			</div>
 			<div class="row emphasy">
 				<div class="span-16">
-					 <h3>I'm from Italy, but I'm living in Berlin. If you want to know more, just <a href="#contact" class="links">contact me!</a></h3>
+					 <h3>I'm from <span itemprop="nationality">Italy</span>, but I'm living in <span itemprop="workLocation">Berlin</span>. If you want to know more, just <a href="#contact" class="links">contact me!</a></h3>
  				</div>
 
 			</div>
@@ -284,9 +284,8 @@ The idea was to provide a tool with which designers can easily see and use eleme
 					<h1>Do you have a project in your mind?</h1>
 				</div>
 				<div class='row'>
-					<div class="span-4">
-						<p>I would love to work with you on your next project. Get in touch with me any time and we can discuss your needs.</p>
-
+					<div class="span-12">
+						<h2>I would love to hear from you!</h2>
 						<p>
 							<script type="text/javascript">
 							<!--
@@ -299,20 +298,6 @@ The idea was to provide a tool with which designers can easily see and use eleme
 							</script>
 						</p>
 		        	</div>
-					<div class="span-8 offset-2">
-			        	<form id="contact-page" action="/send-email" method="POST">
-			        		<fieldset>
-			        			<label for="name">Your Name</label>
-			        			<input name="name" type="text" required>
-			        			<label for="email">Your Email</label>
-			        			<input name="email" type="email" required>
-			        			<label for="message">Your Message</label>
-			        			<textarea name="message" required rows="6"></textarea>
-			        		</fieldset>
-			        		<input class="button" type="submit" value="Ping!">
-			        	</form>
-			        	<p class="thx"></p>
-			        </div>
 			    </div>
 		    </div> <!--.story-->
 		</div>
@@ -324,7 +309,7 @@ The idea was to provide a tool with which designers can easily see and use eleme
 			<div class="container">
 				<div class="row">
 					<div class="span-9">
-						<p>@Antonella Tezza 2012 - all rights reserved.</p>
+						<p>@Antonella Tezza 2013 - all rights reserved.</p>
 					</div>
 					<div class="span-2">
 						<p>You can find me:</p>
