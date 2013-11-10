@@ -12,7 +12,7 @@
 *:focus { outline: none;}
 html { height: 100%;}
 body {
-	background:url(../images/white_wall.png);
+	background: #f0f0f0;
 	@include font-size(1.1);
 	height: 100%;
 }
@@ -213,7 +213,7 @@ input.button {
 }
 
 #about, #contact {
-	background: url(../images/dark_wall.jpg);
+	background: #343838;
 
 	p, label, input, textarea { color: #DBD9D9;}
 
@@ -239,7 +239,7 @@ input.button {
 	min-height: 250px;
 }
 #portfolio, #intro {
-	background:url(../images/white_wall.png);
+	background: #f0f0f0;
 
 	h1, h2, h3, h4, h5, h6 { color: #282727;  
 	}
@@ -381,7 +381,7 @@ nav{
 } 
 /* Footer */
 footer {
-	background: url(../images/dark_wall.jpg);
+	background: #f0f0f0;
 	width: 100%;
 	z-index: 9999999;
 
@@ -394,7 +394,7 @@ footer {
 	}
 
 	.smallback {
-		background: url(../images/white_wall.png);
+		background: #f0f0f0;
 		height: 10px;
 		width: 100%;
 	}
