@@ -178,7 +178,7 @@
 		    	<div class="row">
 			    	<div class="span-4">
 			    		<h2>Brand design</h2>
-			    		<p><a href="http://www.kenhub.com/">KenHub</a>  is a platform for learning about human anatomy, and the brand wanted to express a new approach to doing so. This logo reminds of the card game memory; the idea is to memorize hard-to-remember terms in an easy way. There are four cards in the logo, just like in the memory game. In fact, in this game matching cards are always in pairs.</p>
+			    		<p><a href="http://www.retale.com/">Retale</a>  is a web and mobile application which offers a set of weekly ads based on the user location. The name “Retale” derives from wordplay between Retail and Fairy tale. The Little Red Riding Hood would run as a principal theme to communicate the brand and the Handle Basket has the signature emblem of Retale.</p>
 			    		<p class="tags">
 			    			<span class="tag">branding</span>
 			    			<span class="tag">logo</span>
@@ -190,13 +190,13 @@
 					<div class="span-11 flexslider images">
 					  <ul class="slides">
 					    <li>
-			    			<img src="images/portfolio/kenhub.jpg" alt="kenhub - logo design">
+			    			<img src="images/portfolio/retale-Logo01.jpg" alt="Retale - logo design">
 					    </li>
 					    <li>
-			    			<img src="images/portfolio/kenhub02.jpg" alt="kenhub - logo design">
+			    			<img src="images/portfolio/retale-Logo02.jpg" alt="Retale - logo design">
 					    </li>
 					    <li>
-			    			<img src="images/portfolio/kenhub03.jpg" alt="kenhub - logo design">
+			    			<img src="images/portfolio/retale-Logo03.jpg" alt="Retale - logo design">
 					    </li>
 					  </ul>
 					</div>
