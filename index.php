@@ -323,7 +323,7 @@ The idea was to provide a tool with which designers can easily see and use eleme
 			<div class="container">
 				<div class="row">
 					<div class="span-9">
-						<p>@Antonella Tezza 2013 - all rights reserved.</p>
+						<p>&copy;Antonella Tezza 2013 - all rights reserved.</p>
 					</div>
 					<div class="span-2">
 						<p>You can find me:</p>
