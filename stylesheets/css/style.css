@@ -604,3 +604,12 @@ h1, h2, h3
     margin: 0 auto;
     height: 250px;
 }
+
+@media (max-width: 400px) {
+  .alpaca {
+    width: 180px;
+    margin: 0 auto;
+    height: 180px;
+  }
+}
+
