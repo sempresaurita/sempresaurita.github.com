@@ -55,9 +55,11 @@
 <div class="fullwidth clearfix">
 	<div id="topcontainer" class="bodycontainer clearfix" data-uk-scrollspy="{cls:'uk-animation-fade', delay: 300, repeat: true}">
 		
-		<img src="images/logo-alpaca.png" alt="logo alpaca">
+		<div class="alpaca">
+            <img src="images/logo-alpaca.svg" alt="logo alpaca">
+        </div>
 		<h1><span>Antonella's new portfolio</span><br />is coming soon</h1>
-		<p>It's almost ready ... honest</p>
+		<p>It's almost ready ... honestly</p>
 		
 	</div>
 </div>
@@ -95,7 +97,7 @@
 
 <div class="fullwidth colour2 clearfix">
 	<div id="maincont" class="bodycontainer clearfix" data-uk-scrollspy="{cls:'uk-animation-fade', delay: 300, repeat: true}">
-        <p>If you want to see my previus portfolio, you can find it <a href="old_portfolio.html">here</a></p>
+        <p>If you want to see my previous portfolio, you can find it <a href="old_portfolio.html">here</a></p>
 	
 	</div>
 </div>
@@ -105,7 +107,7 @@
         <div class="bodycontainer clearfix" data-uk-scrollspy="{cls:'uk-animation-fade', delay: 300, repeat: true}">
             <div class="row">
                 <div class="span-9">
-                    <p>@Antonella Tezza 2014 - all rights reserved.</p>
+                    <p>&copy;Antonella Tezza 2014 - all rights reserved.</p>
                 </div>
                 <div class="span-3 social small">
                     <ul class="">
