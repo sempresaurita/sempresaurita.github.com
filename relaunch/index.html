@@ -6,7 +6,6 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Antonella Tezza - web and mobile designer - graphic designer in Berlin</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link href="stylesheets/screen.css" rel="stylesheet" type="text/css" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
 <meta property='og:title' content='web and mobile designer -graphic designer in Berlin - Antonella Tezza / Graphic and Webdesign'/>
 <meta property='og:description' content='Mobile and webdesigner based in Berlin, from Italy. UI designer, graphic designer with experience in Art direction and project management.'/>
@@ -28,13 +27,12 @@
     
 <script src="js/jquery-1.11.1.min.js"></script>
 <script src="js/jquery.inview.js" type="text/javascript"></script>
+<script src="js/modernizr.custom.js"></script>
 <script src="js/uikit.min.js"></script>
 <script src="js/slick.js"></script>
 <script src="js/classie.js"></script>
-<script src="js/overlay.js"></script>
 <script src="js/components/sticky.js"></script>
 <script src="js/scripts.js"></script>
-<script src="js/modernizr.custom.js"></script>
     
 <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 	
@@ -97,6 +95,8 @@
 </div>
 
 <!-- start -->
+
+<div class="container">
 
 <div id="start" class="full-width colour-bg-1 start-section">
   
@@ -183,28 +183,28 @@
 
                 <div class="uk-grid uk-grid-small">
                     <div class="uk-width-medium-1-2">
-                        <figure class="uk-overlay">
-                            <img id="trigger-overlay" src="http://placehold.it/300x300">
+                        <figure id="trigger-overlay-foo" class="uk-overlay">
+                            <img src="http://placehold.it/300x300">
                             <div class="uk-overlay-area"></div>
                         </figure>
                     </div>
                     <div class="uk-width-medium-1-2">
-                        <figure class="uk-overlay">
-                            <img id="trigger-overlay2" src="http://placehold.it/300x300">
+                        <figure id="trigger-overlay-bar" class="uk-overlay">
+                            <img src="http://placehold.it/300x300">
                             <div class="uk-overlay-area"></div>
                         </figure>
                     </div>
                 </div>
                 <div class="uk-grid uk-grid-small">
                     <div class="uk-width-medium-2-5">
-                        <figure class="uk-overlay">
-                            <img id="trigger-overlay3" src="http://placehold.it/230x290">
+                        <figure id="trigger-overlay-baz" class="uk-overlay">
+                            <img src="http://placehold.it/230x290">
                             <div class="uk-overlay-area"></div>
                         </figure>
                     </div>
                     <div class="uk-width-medium-3-5">
-                        <figure class="uk-overlay">
-                            <img id="trigger-overlay4" src="http://placehold.it/360x298">
+                        <figure id="trigger-overlay-qux" class="uk-overlay">
+                            <img src="http://placehold.it/360x298">
                             <div class="uk-overlay-area"></div>
                         </figure>
                     </div>
@@ -212,8 +212,8 @@
                 
             </div>
             <div class="uk-width-medium-1-2">
-                <figure class="uk-overlay">
-                    <img id="trigger-overlay5" src="http://placehold.it/555x558">
+                <figure id="trigger-overlay-quux" class="uk-overlay">
+                    <img src="http://placehold.it/555x558">
                     <div class="uk-overlay-area"></div>
                 </figure>
             </div>
@@ -445,20 +445,28 @@
 
     </div>
 </footer>
+</div>
 
 <!--  Portfolio Details  -->
-<div class="overlay overlay-contentscale">
-    <button type="button" class="overlay-close">Close</button>
+<div class="overlay overlay-foo overlay-contentscale">
+    <button type="button" class="overlay-close overlay-close-foo">Close</button>
     <nav>
         <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Work</a></li>
-            <li><a href="#">Clients</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#">Foo</a></li>
         </ul>
     </nav>
 </div>
+
+<div class="overlay overlay-bar overlay-contentscale">
+    <button type="button" class="overlay-close overlay-close-bar">Close</button>
+    <nav>
+        <ul>
+            <li><a href="#">Bar</a></li>
+        </ul>
+    </nav>
+</div>
+
+<script src="js/overlay.js"></script>
 
 <script type="text/javascript">
 
