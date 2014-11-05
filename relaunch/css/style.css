@@ -1,0 +1,204 @@
+/* 
+
+GENERAL
+
+=========================================================*/
+p {
+    font-size: 16pt;
+    font-weight: 300;
+    line-height: 26pt;
+}
+a,
+.uk-navbar-nav>li>a {
+    color: #1ABC9C;
+    font-weight: 600;
+    text-shadow: none;
+    border: none;
+}
+
+a:hover,
+.uk-navbar-nav>li:hover>a, 
+.uk-navbar-nav>li>a:focus {
+    color: #16A085;
+}
+
+.uk-navbar-nav>li.uk-active>a:hover {
+    color: #444;
+}
+h1, h2, h3, h4, h5, h6, p, blockquote, footer, ul li, a{
+   font-family: 'Source Sans Pro', sans-serif; 
+}
+h1, h2, h3, h4, h5, h6 {
+    text-align: center;
+}
+h1 {
+    font-weight: 200;
+    text-transform: uppercase;
+    font-size: 40pt;
+    color: #444;
+    line-height: 46pt;
+}
+
+h2 {
+    font-weight: 600;
+    color: #1ABC9C;
+    font-size: 28pt;
+    line-height: 34pt;
+}
+
+blockquote {
+    font-weight: 300;
+    font-size: 20pt;
+    font-style: normal;
+    line-height: 30pt;
+    border-left: none;
+    background:url('../imgs/quotes.svg') top left no-repeat;
+}
+blockquote p {
+    margin: 3em;
+}
+cite a{
+    color: #444;
+    font-weight: 600;
+    font-size: 16pt;
+    text-align: right;
+    font-style: normal;
+}
+
+.start-section, .reference-section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.reference-section {
+    padding-bottom: 35px;
+}
+
+figcaption {
+    font-size: 16pt;
+    font-weight: 300;
+}
+
+.full-width  {
+    width: 100%;    
+}
+/* 
+
+BACKGROUNDS
+
+=========================================================*/
+
+.colour-bg-1 {
+    background: #F6F4F4;
+}
+
+.colour-bg-2 {
+    background: #1ABC9C;
+}
+
+.colour-bg-3 {
+    background: #16A085;
+}
+
+.colour-bg-2 p, .colour-bg-3 p,
+.colour-bg-2 h1, .colour-bg-3 h1,
+.colour-bg-2 h2, .colour-bg-3 h2,
+.colour-bg-2 h3, .colour-bg-3 h3,
+.colour-bg-2 h4, .colour-bg-3 h4,
+.colour-bg-2 h5, .colour-bg-3 h5,
+.colour-bg-2 h6, .colour-bg-3 h6,
+.colour-bg-3 figcaption {
+    color: #F6F4F4;
+}
+
+/* 
+
+NAVBAR NAVIGATION
+
+=========================================================*/
+
+.uk-navbar-nav,
+.uk-navbar,
+.uk-navbar-nav>li.uk-active>a,
+.uk-navbar-nav>li:hover>a, 
+.uk-navbar-nav>li>a:focus {
+    background: transparent;
+    border: none;
+    margin-right: 0;
+}
+.uk-navbar-flip .uk-navbar-nav>li>a {
+    margin-right: 0;
+}
+.sticky-navigation {
+    background-color: rgba(246,244,244, 1.0);
+}
+
+/* 
+
+SECTIONS
+
+=========================================================*/
+#start h1{ 
+    font-size: 40pt;
+    margin-bottom: 0px;
+}
+
+#start h2{ 
+    font-size: 17pt;
+     margin-top: 0px;
+}
+#start .statement  {
+    position: relative;
+}
+#start .statement .places {
+    margin-bottom: 20px;
+}
+@media (min-width: 600px) {
+  .start .statement  {
+        padding-top: 92px;
+    }
+}
+
+#start .statement p {
+    margin-bottom: 0px;
+    margin-top: 25%;
+}
+#start .statement h2 {
+    text-align: left;
+    color: #444;
+    margin-top: 0px;
+}
+
+#start .statement .absolut {
+    position: absolute;
+    top: 0;
+    margin-left: 90px;
+    margin-top: 30px;
+    max-width: 400px;
+}
+
+#start .statement .absolut img{
+    max-width: 100%;
+}
+
+#aboutme h2 {
+    text-align: left;
+    color: #444444;
+}
+
+#contact img {
+    height: 72px;
+ }
+
+footer.start-section {
+    padding: 15px 0;
+}
+
+/* 
+
+SLICK SLIDER
+
+=========================================================*/
+.slick-prev, .slick-next {
+    width: 30px;
+    height: 30px;
+}
