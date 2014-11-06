@@ -81,6 +81,109 @@ figcaption {
 .full-width  {
     width: 100%;    
 }
+
+/* 
+
+NEW OVERLAY FOR PORTFOLIO SECTION
+
+=========================================================*/
+.uk-overlay {
+    display: inline-block;
+    position: relative;
+    max-width: 100%;
+    vertical-align: middle;
+    overflow: hidden
+}
+.uk-overlay h1 {
+    color: #fff;
+}
+
+.uk-overlay>:first-child {
+    margin-bottom: 0
+}
+
+.uk-overlay-area {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    opacity: 0;
+    -webkit-transition: opacity 0.15s linear;
+    transition: opacity 0.15s linear;
+    -webkit-transform: translate3d(0, 0, 0);
+    box-shadow: inset 0 0 16px rgba(0, 0, 0, 0.2);
+    margin: -1px
+}
+
+.uk-overlay:hover .uk-overlay-area-content,
+.uk-overlay.uk-hover .uk-overlay-area,
+.uk-overlay-toggle:hover .uk-overlay-area,
+.uk-overlay-toggle.uk-hover .uk-overlay-area {
+    opacity: 1;
+}
+
+.uk-overlay-area:empty:before {
+    content: "\f002";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 50px;
+    height: 50px;
+    margin-top: -25px;
+    margin-left: -25px;
+    font-size: 50px;
+    line-height: 1;
+    font-family: FontAwesome;
+    text-align: center;
+    color: #fff;
+    top: 55%;
+    -webkit-transition: all 0.45s ease-out;
+    transition: all 0.45s ease-out;
+    opacity: 0
+}
+
+
+.uk-overlay-area:not(:empty):before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle
+}
+
+.uk-overlay-area-content {
+    display: inline-block;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    vertical-align: middle;
+    font-size: 1rem;
+    text-align: center;
+    padding: 0
+    15px;
+    color: #fff;
+    display: block;
+    position: absolute;
+    top: 45%;
+    -webkit-transition: all 0.45s ease-out;
+    transition: all 0.45s ease-out;
+    opacity: 0
+}
+.tm-overlay-title:after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 50%;
+    width: 18px;
+    margin-top: 5px;
+    margin-left: -9px;
+    border-top: 2px solid #fff
+}
+.uk-overlay-toggle:hover .uk-overlay-area-content {
+    top: 40%;
+    opacity: 0.9;
+}
 /* 
 
 BACKGROUNDS
@@ -146,9 +249,7 @@ SECTIONS
     font-size: 17pt;
      margin-top: 0px;
 }
-#start .statement  {
-    position: relative;
-}
+
 #start .statement .places {
     margin-bottom: 20px;
 }
@@ -170,14 +271,60 @@ SECTIONS
 
 #start .statement .absolut {
     position: absolute;
-    top: 0;
-    margin-left: 90px;
-    margin-top: 30px;
-    max-width: 400px;
+    margin-left: 115px;
+    margin-top: -52px;
 }
 
-#start .statement .absolut img{
-    max-width: 100%;
+#start .statement .absolut.worldline {
+    right: 0;
+    margin-right: 220px;
+    margin-top: 60px;
+}
+
+@media (max-width: 1200px) {
+
+    #start .statement .absolut img{
+        width: 247px;
+        margin-top: 30px;
+    }
+
+    #start .statement .absolut.worldline {
+        margin-top: 40px;
+        margin-right: 185px;
+    }
+
+    #start .statement .absolut.worldline img{
+        width: 300px;
+    }
+
+}
+@media (max-width: 900px) {
+
+    #start .statement .absolut img{
+        width: 300px;
+        margin-top: 16px;
+        margin-left: -30px;
+    }
+
+    #start .statement .absolut.worldline {
+        margin-right: 133px;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 800px) {
+
+    #start .statement .absolut img{
+        width: 320px;
+        margin-top: 16px;
+        margin-left: -60px;
+    }
+
+    #start .statement .absolut.worldline {
+        margin-right: 85px;
+        margin-top: 27px;
+    }
+
 }
 
 #aboutme h2 {
@@ -185,6 +332,9 @@ SECTIONS
     color: #444444;
 }
 
+#workon img {
+    height: 170px;
+}
 #contact img {
     height: 72px;
  }
@@ -201,4 +351,29 @@ SLICK SLIDER
 .slick-prev, .slick-next {
     width: 30px;
     height: 30px;
+}
+
+/* 
+
+PORTFOLIO
+
+=========================================================*/
+.portfolio {
+    background: #444444;
+}
+.portfolio p,
+.portfolio h2 {
+    color: #F6F4F4;
+}
+.portfolio h2 {
+    text-align: left;
+}
+.portfolio h2.title-project img {
+    margin-right: 13px; 
+    margin-top: 10px;
+    height: 28px;
+    vertical-align: top;
+}
+.portfolio h2.title-project a:hover img{
+    opacity: 0.7;
 }

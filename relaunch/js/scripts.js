@@ -1,4 +1,4 @@
-(function(){
+$(function(){
 	$('.slider').slick({
 	  // setting-name: setting-value
 	  autoplay: true
@@ -14,6 +14,17 @@
          }
     );    
 
+	  $('.sendEmail').click(function (event) {
+	    	var name = "antonellatezza";
+			var domain = "gmail.com";
+			var email =  name + '@' + domain;
+
+			var subject = "Contact from your website";
+	    	var emailBody = "Hi Antonella";
+
+	        window.location = 'mailto:' + email + '?subject=' + subject + '&body=' + emailBody;
+
+	  });
 
 	var scrollHandler = function (event, visible) {
 	
@@ -30,3 +41,4 @@
 	$('#start, #what, #workon, #reference, #aboutme, #contact').bind('inview', scrollHandler);
 
 });
+

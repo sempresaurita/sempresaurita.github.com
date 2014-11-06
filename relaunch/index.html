@@ -21,16 +21,13 @@
 <link rel="stylesheet" href="css/components/sticky.almost-flat.min.css">
 <link rel="stylesheet" href="css/components/sticky.min.css">
 <link rel="stylesheet" href="css/slick.css">
-<link rel="stylesheet" href="css/style8.css">
 <link rel="stylesheet" href="css/style.css">
     
     
 <script src="js/jquery-1.11.1.min.js"></script>
-<script src="js/jquery.inview.js" type="text/javascript"></script>
 <script src="js/modernizr.custom.js"></script>
 <script src="js/uikit.min.js"></script>
 <script src="js/slick.js"></script>
-<script src="js/classie.js"></script>
 <script src="js/components/sticky.js"></script>
 <script src="js/scripts.js"></script>
     
@@ -38,31 +35,36 @@
 	
 	<!-- Favicons
 	================================================== -->
-	<link rel="apple-touch-icon" sizes="57x57" href="images/favicons/apple-touch-icon-57x57.png" />
-	<link rel="apple-touch-icon" sizes="114x114" href="images/favicons/apple-touch-icon-114x114.png" />
-	<link rel="apple-touch-icon" sizes="72x72" href="images/favicons/apple-touch-icon-72x72.png" />
-	<link rel="apple-touch-icon" sizes="144x144" href="images/favicons/apple-touch-icon-144x144.png" />
-	<link rel="apple-touch-icon" sizes="60x60" href="images/favicons/apple-touch-icon-60x60.png" />
-	<link rel="apple-touch-icon" sizes="120x120" href="images/favicons/apple-touch-icon-120x120.png" />
-	<link rel="apple-touch-icon" sizes="76x76" href="images/favicons/apple-touch-icon-76x76.png" />
-	<link rel="apple-touch-icon" sizes="152x152" href="images/favicons/apple-touch-icon-152x152.png" />
-	<link rel="icon" type="image/png" href="images/favicons/favicon-16x16.png" sizes="16x16" />
-	<link rel="icon" type="image/png" href="images/favicons/favicon-32x32.png" sizes="32x32" />
-	<link rel="icon" type="image/png" href="images/favicons/favicon-96x96.png" sizes="96x96" />
-	<link rel="icon" type="image/png" href="images/favicons/favicon-160x160.png" sizes="160x160" />
-	<meta name="msapplication-TileColor" content="#da532c" />
-	<meta name="msapplication-TileImage" content="images/favicons/mstile-144x144.png" />
-	<meta name="msapplication-square70x70logo" content="images/favicons/mstile-70x70.png" />
-	<meta name="msapplication-square150x150logo" content="images/favicons/mstile-150x150.png" />
-	<meta name="msapplication-wide310x150logo" content="images/favicons/mstile-310x150.png" />
-	<meta name="msapplication-square310x310logo" content="images/favicons/mstile-310x310.png" />
+	<link rel="apple-touch-icon" sizes="57x57" href="imgs/favicons/apple-touch-icon-57x57.png" />
+	<link rel="apple-touch-icon" sizes="114x114" href="imgs/favicons/apple-touch-icon-114x114.png" />
+	<link rel="apple-touch-icon" sizes="72x72" href="imgs/favicons/apple-touch-icon-72x72.png" />
+	<link rel="apple-touch-icon" sizes="144x144" href="imgs/favicons/apple-touch-icon-144x144.png" />
+	<link rel="apple-touch-icon" sizes="60x60" href="imgs/favicons/apple-touch-icon-60x60.png" />
+	<link rel="apple-touch-icon" sizes="120x120" href="imgs/favicons/apple-touch-icon-120x120.png" />
+	<link rel="apple-touch-icon" sizes="76x76" href="imgs/favicons/apple-touch-icon-76x76.png" />
+	<link rel="apple-touch-icon" sizes="152x152" href="imgs/favicons/apple-touch-icon-152x152.png" />
+
+	<link rel="icon" type="image/png" href="imgs/favicons/favicon-16x16.png" sizes="16x16" />
+    <link rel="icon" type="image/png" href="imgs/favicons/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="imgs/favicons/favicon-48x48.png" sizes="32x32" />
+	<link rel="icon" type="image/png" href="imgs/favicons/favicon-64x64.png" sizes="32x32" />
+	<link rel="icon" type="image/png" href="imgs/favicons/favicon-96x96.png" sizes="96x96" />
+	<link rel="icon" type="image/png" href="imgs/favicons/favicon-160x160.png" sizes="160x160" />
+    <link rel="shortcut icon" href="imgs/favicons/favicon.ico"/>
+
+	<!-- <meta name="msapplication-TileColor" content="#da532c" />
+	<meta name="msapplication-TileImage" content="imgs/favicons/mstile-144x144.png" />
+	<meta name="msapplication-square70x70logo" content="imgs/favicons/mstile-70x70.png" />
+	<meta name="msapplication-square150x150logo" content="imgs/favicons/mstile-150x150.png" />
+	<meta name="msapplication-wide310x150logo" content="imgs/favicons/mstile-310x150.png" />
+	<meta name="msapplication-square310x310logo" content="imgs/favicons/mstile-310x310.png" /> -->
 </head>
 
 <body lang="en">
 
 <!-- Navigation bar -->
     
-<div class="full-width colour-bg-1 sticky-navigation" data-uk-sticky="{media: 640, top:-20, animation: 'uk-animation-slide-top'}">
+<div id="navigation" class="full-width colour-bg-1 sticky-navigation" data-uk-sticky="{media: 640, top:-20, animation: 'uk-animation-slide-top'}" data-uk-scrollspy-nav="{closest:'li', smoothscroll:true}">
     <div class="uk-container uk-container-center">
         <div class="uk-width-1-1">
             <nav class="uk-navbar">
@@ -111,17 +113,17 @@
             
         </div>
 
-        <div class="uk-grid statement">
+        <div class="uk-grid statement uk-position-relative">
 
             <div class="absolut uk-hidden-small">
-                <img src="imgs/plane.svg">
+                <img src="imgs/plane.svg" data-uk-scrollspy="{cls:'uk-animation-fade', delay:250}" alt="italian designer living in germany">
             </div>
 
-            <div class="uk-width-small-1-1 uk-width-medium-1-3 places uk-scrollspy-init-inview uk-scrollspy-inview uk-animation-fade" data-uk-scrollspy="{cls:'uk-animation-fade', repeat: true}">
+            <div class="uk-width-small-1-1 uk-width-medium-1-3 places">
                 <div class="uk-grid">
                     <div class="uk-width-1-2">
                         <figure class="uk-align-right">
-                            <img src="imgs/italy.svg">
+                            <img src="imgs/italy.svg" data-uk-scrollspy="{cls:'uk-animation-fade'}" alt="italy, where i am from">
                         </figure>
                     </div>
                     <div class="uk-width-1-2">
@@ -131,11 +133,11 @@
                 </div>
             </div>
 
-            <div class="uk-width-small-1-1 uk-width-medium-1-3 uk-scrollspy-init-inview uk-scrollspy-inview places uk-animation-fade" data-uk-scrollspy="{cls:'uk-animation-fade', delay:300, repeat: true}">
+            <div class="uk-width-small-1-1 uk-width-medium-1-3">
                 <div class="uk-grid">
                     <div class="uk-width-1-2">
                         <figure class="uk-align-right">
-                            <img src="imgs/germany.svg">
+                            <img src="imgs/germany.svg" data-uk-scrollspy="{cls:'uk-animation-fade', delay:500}" alt="germany, where i live">
                         </figure>
                     </div>
                     <div class="uk-width-1-2 uk-text-middle text-img places">
@@ -144,11 +146,12 @@
                     </div>
                 </div>
             </div>
-            <div class="uk-width-small-1-1 uk-width-medium-1-3 uk-scrollspy-init-inview uk-scrollspy-inview places uk-animation-fade" data-uk-scrollspy="{cls:'uk-animation-fade', delay:600, repeat: true}">
+
+            <div class="uk-width-small-1-1 uk-width-medium-1-3">
                 <div class="uk-grid">
                     <div class="uk-width-1-2">
                         <figure class="uk-align-right">
-                            <img src="imgs/world.svg">
+                            <img src="imgs/world.svg" data-uk-scrollspy="{cls:'uk-animation-fade', delay:1000}" alt="world, i am working for it">
                         </figure>
                     </div>
                     <div class="uk-width-1-2">
@@ -156,6 +159,10 @@
                         <h2>the world</h2>
                     </div>
                 </div>
+            </div>
+
+            <div class="absolut worldline uk-hidden-small">
+                <img src="imgs/world_line_and_plane.svg" data-uk-scrollspy="{cls:'uk-animation-fade', delay:750}" alt="working as designer for the world wilde">
             </div>
 
         </div>
@@ -169,7 +176,7 @@
     <div class="uk-container uk-container-center">
         <div class="uk-grid">
             <div class="uk-width-1-1">
-                <article>
+                <article data-uk-scrollspy="{cls:'uk-animation-slide-bottom'}">
                     <header>
                         <h1>What I do</h1>
                         <h3>Here a showcases of selected works</h3>
@@ -179,44 +186,90 @@
         </div>
 
         <div class="uk-grid uk-grid-small">
-            <div class="uk-width-1-2">
-
+            <div class="uk-width-1-1 uk-width-medium-1-2">
+                
                 <div class="uk-grid uk-grid-small">
-                    <div class="uk-width-medium-1-2">
-                        <figure id="trigger-overlay-foo" class="uk-overlay">
-                            <img src="http://placehold.it/300x300">
-                            <div class="uk-overlay-area"></div>
+                    <div class="uk-width-1-2 uk-overlay-toggle">
+                        <figure class="uk-overlay">
+                            <img width="500" src="imgs/pickers_logo_thumb.svg" alt="Pickers logo concept app design project">
+                            <a href="portfolio/pickers.html">
+                                <div class="uk-overlay-area">
+                                    <div class="uk-overlay-area-content">
+                                        <h1 class="uk-h2 tm-overlay-title">
+                                            Pickers
+                                        </h1>
+                                        <div>Logo, app and website design</div> 
+                                    </div>
+                                </div>
+                            </a>
                         </figure>
                     </div>
-                    <div class="uk-width-medium-1-2">
-                        <figure id="trigger-overlay-bar" class="uk-overlay">
-                            <img src="http://placehold.it/300x300">
-                            <div class="uk-overlay-area"></div>
+                    <div class="uk-width-1-2 uk-overlay-toggle">
+                        <figure class="uk-overlay">
+                            <img width="500" src="imgs/duriana_logo_thumb.svg" alt="Duriana icon set app redesign">
+                            <a href="portfolio/duriana.html">
+                                <div class="uk-overlay-area">
+                                    <div class="uk-overlay-area-content">
+                                        <h1 class="uk-h2 tm-overlay-title">
+                                            Duriana
+                                        </h1>
+                                        <div>Icon set and app redesign</div> 
+                                    </div>
+                                </div>
+                            </a>
                         </figure>
                     </div>
                 </div>
                 <div class="uk-grid uk-grid-small">
-                    <div class="uk-width-medium-2-5">
-                        <figure id="trigger-overlay-baz" class="uk-overlay">
-                            <img src="http://placehold.it/230x290">
-                            <div class="uk-overlay-area"></div>
+                    <div class="uk-width-2-5 uk-overlay-toggle">
+                        <figure class="uk-overlay">
+                            <img width="500" src="imgs/citydelivery_thumb.svg" alt="Citydelivery responsive web design and icons">
+                            <a href="portfolio/citydelivery.html">
+                                <div class="uk-overlay-area">
+                                    <div class="uk-overlay-area-content">
+                                        <h1 class="uk-h2 tm-overlay-title">
+                                            City Delivery
+                                        </h1>
+                                        <div>Responsive web design</div> 
+                                    </div>
+                                </div>
+                            </a>
                         </figure>
                     </div>
-                    <div class="uk-width-medium-3-5">
-                        <figure id="trigger-overlay-qux" class="uk-overlay">
-                            <img src="http://placehold.it/360x298">
-                            <div class="uk-overlay-area"></div>
+                    <div class="uk-width-3-5 uk-overlay-toggle">
+                        <figure class="uk-overlay">
+                            <img width="700" src="imgs/retale_logo_thumb.svg" alt="Retale logo concept design project">
+                            <a href="portfolio/retale.html">
+                                <div class="uk-overlay-area">
+                                    <div class="uk-overlay-area-content">
+                                        <h1 class="uk-h2 tm-overlay-title">
+                                            Retale
+                                        </h1>
+                                        <div>Brand concept and app redesign</div> 
+                                    </div>
+                                </div>
+                            </a>
                         </figure>
                     </div>
                 </div>
                 
             </div>
-            <div class="uk-width-medium-1-2">
-                <figure id="trigger-overlay-quux" class="uk-overlay">
-                    <img src="http://placehold.it/555x558">
-                    <div class="uk-overlay-area"></div>
+            <div class="uk-width-1-1 uk-width-medium-1-2 uk-overlay-toggle">
+                <figure class="uk-overlay">
+                    <img src="imgs/pickers_logo_thumb.svg" alt="Pickers logo concept app design project">
+                    <a href="portfolio/retale.html">
+                        <div class="uk-overlay-area">
+                            <div class="uk-overlay-area-content">
+                                <h1 class="uk-h2 tm-overlay-title">
+                                    Retale
+                                </h1>
+                                <div>Brand concept and app redesign</div> 
+                            </div>
+                        </div>
+                    </a>
                 </figure>
             </div>
+
         </div>
     </div>
 </div>
@@ -227,32 +280,32 @@
     <div class="uk-container uk-container-center">
         <div class="uk-grid">
             <div class="uk-width-1-1">
-                <article>
+                <article class="uk-scrollspy-init-inview" data-uk-scrollspy="{cls:'uk-animation-slide-bottom'}">
                     <header>
                         <h1>Work on</h1>
                         <h3>I like all kinds of design, but I'm better in:</h3>
                     </header>
                 </article>
             </div>
-            <div class="uk-width-1-2 uk-width-medium-1-4 uk-margin-large-top uk-scrollspy-init-inview uk-scrollspy-inview uk-animation-fade" data-uk-scrollspy="{cls:'uk-animation-fade', repeat: true}">
+            <div class="uk-width-1-2 uk-width-medium-1-4 uk-margin-large-top" data-uk-scrollspy="{cls:'uk-animation-fade'}">
                 <figure>
                     <img class="uk-align-center" src="imgs/Responsive.svg" alt="Responsive web design">
                     <figcaption class="uk-text-center">Responsive web design</figcaption>
                 </figure>
             </div>
-            <div class="uk-width-1-2 uk-width-medium-1-4 uk-margin-large-top  uk-scrollspy-init-inview uk-scrollspy-inview uk-animation-fade" data-uk-scrollspy="{cls:'uk-animation-fade', delay:250, repeat: true}">
+            <div class="uk-width-1-2 uk-width-medium-1-4 uk-margin-large-top" data-uk-scrollspy="{cls:'uk-animation-fade', delay:250}">
                 <figure>
                     <img class="uk-align-center" src="imgs/Mobile.svg" alt="Mobile design and native application">
                     <figcaption class="uk-text-center">Mobile design</figcaption>
                 </figure>
             </div>
-            <div class="uk-width-1-2 uk-width-medium-1-4 uk-margin-large-top  uk-scrollspy-init-inview uk-scrollspy-inview uk-animation-fade" data-uk-scrollspy="{cls:'uk-animation-fade', delay:500, repeat: true}">
+            <div class="uk-width-1-2 uk-width-medium-1-4 uk-margin-large-top" data-uk-scrollspy="{cls:'uk-animation-fade', delay:500}">
                 <figure>
                     <img class="uk-align-center" src="imgs/corporate.svg" alt="Corporate identity">
                     <figcaption class="uk-text-center">Corporate identity</figcaption>
                 </figure>
             </div>
-            <div class="uk-width-1-2 uk-width-medium-1-4 uk-margin-large-top  uk-scrollspy-init-inview uk-scrollspy-inview uk-animation-fade" data-uk-scrollspy="{cls:'uk-animation-fade', delay:750, repeat: true}">
+            <div class="uk-width-1-2 uk-width-medium-1-4 uk-margin-large-top" data-uk-scrollspy="{cls:'uk-animation-fade', delay:750}">
                 <figure>
                     <img class="uk-align-center" src="imgs/offline.svg" alt="Offline design">
                     <figcaption class="uk-text-center">Offline design</figcaption>
@@ -265,7 +318,7 @@
 
 <!-- Third Section References from Linkedin -->
 
-<div id="reference" class="full-width colour-bg-2 reference-section">
+<div id="reference" class="full-width colour-bg-2 reference-section uk-grid-small" data-uk-scrollspy="{cls:'uk-animation-fade', delay:250}">
     <div class="uk-container uk-container-center">
         <div class="uk-grid">
             <div class="uk-width-1-1">
@@ -327,7 +380,7 @@
         <div class="uk-grid">
             <article class="uk-width-1-1">
                 <header>
-                    <h1>About me</h1>
+                    <h1 data-uk-scrollspy="{cls:'uk-animation-slide-bottom'}">About me</h1>
                     <figure>
                         <img class="uk-align-center" src="imgs/alpaca_me.svg" alt="myself">
                     </figure>
@@ -357,28 +410,28 @@
     <div class="uk-container uk-container-center">
         <div class="uk-grid">
             <div class="uk-width-1-1">
-                <article>
+                <article data-uk-scrollspy="{cls:'uk-animation-slide-bottom'}">
                     <header>
                         <h1>Happy clients</h1>
                     </header>
                 </article>
             </div>
-            <div class="uk-width-1-2 uk-width-medium-1-4 uk-margin-large-top uk-scrollspy-init-inview uk-scrollspy-inview places uk-animation-fade" data-uk-scrollspy="{cls:'uk-animation-fade', repeat: true}">
+            <div class="uk-width-1-2 uk-width-medium-1-4 uk-margin-large-top" data-uk-scrollspy="{cls:'uk-animation-fade'}">
                     <figure>
                         <img class="uk-align-center" src="imgs/auctionata.svg" alt="Auctionata">
                     </figure>
                 </div>
-                <div class="uk-width-1-2 uk-width-medium-1-4 uk-margin-large-top uk-scrollspy-init-inview uk-scrollspy-inview places uk-animation-fade" data-uk-scrollspy="{cls:'uk-animation-fade', delay: 250, repeat: true}">
+                <div class="uk-width-1-2 uk-width-medium-1-4 uk-margin-large-top" data-uk-scrollspy="{cls:'uk-animation-fade', delay: 250}">
                     <figure>
                         <img class="uk-align-center" src="imgs/epigami_logo.svg" alt="Epigami">
                     </figure>
                 </div>
-                <div class="uk-width-1-2 uk-width-medium-1-4 uk-margin-large-top uk-scrollspy-init-inview uk-scrollspy-inview places uk-animation-fade" data-uk-scrollspy="{cls:'uk-animation-fade', delay: 500, repeat: true}">
+                <div class="uk-width-1-2 uk-width-medium-1-4 uk-margin-large-top" data-uk-scrollspy="{cls:'uk-animation-fade', delay: 500}">
                     <figure>
                         <img class="uk-align-center" src="imgs/city_delivery.svg" alt="City Delivery">
                     </figure>
                 </div>
-                <div class="uk-width-1-2 uk-width-medium-1-4 uk-margin-large-top uk-scrollspy-init-inview uk-scrollspy-inview places uk-animation-fade" data-uk-scrollspy="{cls:'uk-animation-fade', delay: 750, repeat: true}">
+                <div class="uk-width-1-2 uk-width-medium-1-4 uk-margin-large-top" data-uk-scrollspy="{cls:'uk-animation-fade', delay: 750}">
                     <figure>
                         <img class="uk-align-center" src="imgs/payorshare_logo.svg" alt="PayOrShare">
                     </figure>
@@ -390,7 +443,7 @@
 
 <!-- Sixth Section Contact -->
 
-<div id="contact" class="full-width colour-bg-2 start-section">
+<div id="contact" class="full-width colour-bg-2 start-section uk-width-medium-2-5 uk-grid-small" data-uk-scrollspy="{cls:'uk-animation-fade', delay:250}">
     <div class="uk-container uk-container-center">
         <div class="uk-grid">
             <div class="uk-width-1-1">
@@ -401,16 +454,16 @@
                     </header>
                 </article>
             </div>
-                <figure class="uk-width-1-3 uk-width-medium-2-5 uk-grid-small">
-                    <a href="#"><img class="social-icon uk-align-right" src="imgs/email.svg" alt="email"></a>
+                <figure class="uk-width-1-3 uk-width-medium-2-5 uk-grid-small" data-uk-scrollspy="{cls:'uk-animation-fade', delay:250}">
+                    <a href="#"><img class="sendEmail social-icon uk-align-right" src="imgs/email.svg" alt="email"></a>
                 </figure>
 
-                <figure class="uk-width-1-3 uk-width-medium-1-5 uk-grid-small">
-                    <a href="#"><img class="social-icon uk-align-center" src="imgs/linkedin.svg" alt="linkedin"></a>
+                <figure class="uk-width-1-3 uk-width-medium-1-5 uk-grid-small" data-uk-scrollspy="{cls:'uk-animation-fade', delay:500}">
+                    <a href="http://www.linkedin.com/in/antonellatezza"><img class="social-icon uk-align-center" src="imgs/linkedin.svg" alt="linkedin"></a>
                 </figure>
 
-                <figure class="uk-width-1-3 uk-width-medium-2-5 uk-grid-small">
-                    <a href="#"><img class="social-icon uk-align-left" src="imgs/twitter.svg" alt="twitter"></a>
+                <figure class="uk-width-1-3 uk-width-medium-2-5 uk-grid-small" data-uk-scrollspy="{cls:'uk-animation-fade', delay:750}">
+                    <a href="https://twitter.com/antonellatezza"><img class="social-icon uk-align-left" src="imgs/twitter.svg" alt="twitter"></a>
                 </figure>
         </div>
     </div>
@@ -436,9 +489,19 @@
                     <dt>tel.</dt>
                     <dd>+49 176 344 02546</dd>
                     <dt>email</dt>
-                    <dd>antonellatezza@gmail.com</dd>
+                    <dd>
+                        <script type="text/javascript">
+                            <!--
+                            var name = "antonellatezza";
+                            var domain = "gmail.com";
+                            document.write('<a class="email" href=\"mailto:' + name + '@' + domain + '\">');
+                            document.write(name + '@' + domain + '</a>');
+                            // -->
+
+                        </script>
+                    </dd>
                     <dt>web</dt>
-                    <dd>www.antonellatezza.com</dd>
+                    <dd><a href="http://www.antonellatezza.com">www.antonellatezza.com</a></dd>
                 </dl>
             </div>
         </div>
@@ -446,27 +509,6 @@
     </div>
 </footer>
 </div>
-
-<!--  Portfolio Details  -->
-<div class="overlay overlay-foo overlay-contentscale">
-    <button type="button" class="overlay-close overlay-close-foo">Close</button>
-    <nav>
-        <ul>
-            <li><a href="#">Foo</a></li>
-        </ul>
-    </nav>
-</div>
-
-<div class="overlay overlay-bar overlay-contentscale">
-    <button type="button" class="overlay-close overlay-close-bar">Close</button>
-    <nav>
-        <ul>
-            <li><a href="#">Bar</a></li>
-        </ul>
-    </nav>
-</div>
-
-<script src="js/overlay.js"></script>
 
 <script type="text/javascript">
 
