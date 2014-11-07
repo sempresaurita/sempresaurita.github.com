@@ -82,6 +82,16 @@ figcaption {
     width: 100%;    
 }
 
+.uk-badge {
+    border-radius: 4px;
+    background: rgba(215,215,215,0.3);
+    font-size: 14px;
+    color: #F6F4F4;
+    line-height: 20px;
+    font-weight: 300;
+    padding: 4px 10px 2px 10px;
+    margin: 4px 3px 4px 0px;
+}
 /* 
 
 NEW OVERLAY FOR PORTFOLIO SECTION
