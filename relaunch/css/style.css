@@ -57,6 +57,15 @@ blockquote {
 blockquote p {
     margin: 3em;
 }
+
+@media (max-width: 600px) {
+    blockquote {
+        background: none;
+    }
+      blockquote p {
+        margin: 1em;
+    }
+}
 cite a{
     color: #444;
     font-weight: 600;
