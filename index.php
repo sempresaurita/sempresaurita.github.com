@@ -25,7 +25,7 @@
     
     
 <script src="js/jquery-1.11.1.min.js"></script>
-<script src="js/modernizr.custom.js"></script>
+<script src="js/modernizr.custom.min.js"></script>
 <script src="js/uikit.min.js"></script>
 <script src="js/slick.js"></script>
 <script src="js/components/sticky.js"></script>
@@ -58,35 +58,22 @@
 
 <!-- Navigation bar -->
     
-<div id="navigation" class="full-width colour-bg-1 sticky-navigation" data-uk-sticky="{media: 640, top:-20, animation: 'uk-animation-slide-top'}" data-uk-scrollspy-nav="{closest:'li', smoothscroll:true}">
+<div id="navigation" class="full-width colour-bg-1 sticky-navigation" data-uk-sticky="{top:-20, animation: 'uk-animation-slide-top'}" data-uk-scrollspy-nav="{closest:'li', smoothscroll:true}">
     <div class="uk-container uk-container-center">
         <div class="uk-width-1-1">
             <nav class="uk-navbar">
                 <div class="uk-navbar-flip">
-                    <ul class="uk-navbar-nav uk-hidden-small">
+                    <ul class="uk-navbar-nav">
                         <li class="uk-parent start"><a href="#start" data-uk-smooth-scroll>Start</a></li>
-                        <li class="uk-parent what"><a href="#what" data-uk-smooth-scroll>What I do</a></li>
+                        <li class="uk-parent what"><a href="#what" data-uk-smooth-scroll>What</a></li>
                         <li class="uk-parent reference"><a href="#reference" data-uk-smooth-scroll>People say</a></li>
-                        <li class="uk-parent aboutme"><a href="#aboutme" data-uk-smooth-scroll>About me</a></li>
+                        <li class="uk-parent aboutme"><a href="#aboutme" data-uk-smooth-scroll>About</a></li>
 
                         <li class="uk-parent contact"><a href="#contact" data-uk-smooth-scroll>Contact</a></li>
                     </ul>
-                    <a href="#offcanvans" class="uk-navbar-toggle uk-visible-small" data-uk-offcanvas></a>
                 </div>
             </nav>
         </div>
-    </div>
-</div>
-
-    <div id="offcanvans" class="uk-offcanvas">
-    <div class="uk-offcanvas-bar uk-offcanvas-bar-flip">
-        <ul class="uk-nav uk-nav-offcanvas" data-uk-nav>
-            <li class="uk-parent"><a href="#start">Start</a></li>
-            <li class="uk-parent"><a href="#what">What</a></li>
-            <li class="uk-parent"><a href="#reference">People say</a></li>
-            <li class="uk-parent"><a href="#aboutme">About me</a></li>
-            <li class="uk-parent"><a href="#contact">Contact</a></li>
-        </ul>
     </div>
 </div>
 
@@ -163,6 +150,7 @@
 
     </div>
 </div>
+
 
 <!-- First Section portfolio -->
 
@@ -473,13 +461,8 @@
             </div>
             <div class="uk-width-2-5 uk-width-medium-5-10">
                 <address>
-                    Antonella Tezza<br>
-                    Köslinerstr. 20,<br>
-                    13357 Berlin
-                </address>
-            </div>
-            <div class="uk-width-3-5 uk-width-medium-4-10">
-                <dl class="uk-description-list-horizontal">
+                    <h3>Antonella Tezza</h3>
+                    <dl class="uk-description-list-horizontal">
                     <dt class="uk-hidden-small">tel.</dt>
                     <dd>+49 176 344 02546</dd>
                     <dt class="uk-hidden-small">email</dt>
@@ -497,6 +480,7 @@
                     <dt class="uk-hidden-small">web</dt>
                     <dd><a href="http://www.antonellatezza.com">www.antonellatezza.com</a></dd>
                 </dl>
+                </address>
             </div>
         </div>
 
