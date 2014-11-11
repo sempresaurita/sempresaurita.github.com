@@ -358,18 +358,25 @@
                 </header>
             </article>
             <div class="uk-width-medium-1-2">
-                    <h2 class="uk-margin-large-top">My life in Italy</h2>
-                    <p>My name is Antonella. I have worked as a web designer for more than 10 years. When I was still attending high school, I started working in a <a href="http://www.colombo3000.com/">web agency</a>.</p>
-                    <p>I went to the fine art academy, and afterwards started to work as a freelancer in Italy. I was a teacher for two years in a <a href="http://ipsconsulting.it/">private school</a> and taught a 90-hour web course.
-                    I worked with <a href="http://www.adimage.it/">communication agencies</a> as graphic desinger, in a web agency as an art director and web designer, and also had some projects as a <a href="http://www.globo.it/">toy designer</a>.</p>
+                    <h2 class="uk-margin-large-top">Italy</h2>
+                    <p>I am Antonella from Verona. During my high school years I started working
+					for a <a href="http://www.colombo3000.com/">web agency</a>. Later I graduated from a fine art academy, and afterwards
+					continued my carrier as a freelancer.</p>
+
+					<p>Taught 90-hour courses at a <a href="http://ipsconsulting.it/">private school</a>, worked with <a href="http://www.adimage.it/">communication agencies</a> as graphic designer, art director and web designer. I also had some
+					projects as a <a href="http://www.globo.it/">toy designer</a>.</p>
                 </div>
                 <div class="uk-width-medium-1-2">
-                    <h2 class="uk-margin-large-top">Berlin, the new life</h2>
-                    <p>In love with Berlin, I decided to stop everything and move there in 2011.<br>
-                    A fresh and stimulating city, perfect for designers and developers.
-                    I immediately found a nice company to work for, <a href="http://www.lieferheld.de/">Lieferheld</a> where I stayed for 1 year and an half. In the beginning I worked as a web designer and front-end developer, and the last 5 months as the team leader for the new front endplatform. 
-                    After Lieferheld, I worked for <a href="http://www.kaufda.de/">kaufDA</a> as head of interface design for 2 years. 
-                    From August 2014 I’m fulltime freelancer. </p>
+                    <h2 class="uk-margin-large-top">Berlin</h2>
+                    <p>In love with Berlin, I decided to give up my Italian life and move here in 2011.</p>
+
+					<p>	A fresh and stimulating city, perfect for designers and developers. Worked at
+						DeliveryHero (<a href="http://www.lieferheld.de/">Lieferheld</a>) for almost 2 years, starting as a Web Designer and
+						Front End Developer, later as the Design Team Leader.</p>
+
+					<p>	After Lieferheld, I worked for <a href="http://www.kaufda.de/">kaufDA</a> as Head of Interface Design for 2 years.</p>
+
+					<p>	From August 2014 I’m a full-time freelancer again.</p>
                 </div>
         </div>
     </div>
