@@ -58,7 +58,7 @@
 
 <!-- Navigation bar -->
     
-<div id="navigation" class="full-width colour-bg-1 sticky-navigation" data-uk-sticky="{media: 640, top:-20, animation: 'uk-animation-slide-top'}" data-uk-scrollspy-nav="{closest:'li', smoothscroll:true}">
+<div id="navigation" class="full-width colour-bg-1 sticky-navigation" data-uk-sticky="{media: 640, animation: 'uk-animation-slide-top'}" data-uk-scrollspy-nav="{closest:'li', smoothscroll:true}">
     <div class="uk-container uk-container-center">
         <div class="uk-width-1-1">
             <nav class="uk-navbar">
