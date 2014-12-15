@@ -57,7 +57,6 @@
                         <li class="uk-parent what"><a href="#what" data-uk-smooth-scroll>What</a></li>
                         <li class="uk-parent reference"><a href="#reference" data-uk-smooth-scroll>People say</a></li>
                         <li class="uk-parent aboutme"><a href="#aboutme" data-uk-smooth-scroll>About</a></li>
-
                         <li class="uk-parent contact"><a href="#contact" data-uk-smooth-scroll>Contact</a></li>
                     </ul>
                 </div>
@@ -157,10 +156,25 @@
         </div>
 
         <div class="uk-grid uk-grid-small">
-            <div class="uk-width-1-1 uk-width-medium-1-2">
+            <div class="uk-width-1-1 uk-width-medium-2-3">
                 
                 <div class="uk-grid uk-grid-small">
-                    <div class="uk-width-1-2 uk-overlay-toggle">
+                    <div class="uk-width-1-3 uk-overlay-toggle">
+                        <figure class="uk-overlay">
+                            <img width="500" src="imgs/payorshare_logo_thumb.svg" alt="Corporate identity design and responsive website">
+                            <a href="portfolio/payorshare.html">
+                                <div class="uk-overlay-area">
+                                    <div class="uk-overlay-area-content">
+                                        <h1 class="uk-h2 tm-overlay-title">
+                                            PayOrShare
+                                        </h1>
+                                        <div>Corporate identity, website design</div> 
+                                    </div>
+                                </div>
+                            </a>
+                        </figure>
+                    </div>
+                    <div class="uk-width-1-3 uk-overlay-toggle">
                         <figure class="uk-overlay">
                             <img width="500" src="imgs/pickers_logo_thumb.svg" alt="Pickers logo concept app design project">
                             <a href="portfolio/pickers.html">
@@ -175,7 +189,7 @@
                             </a>
                         </figure>
                     </div>
-                    <div class="uk-width-1-2 uk-overlay-toggle">
+                    <div class="uk-width-1-3 uk-overlay-toggle">
                         <figure class="uk-overlay">
                             <img width="500" src="imgs/duriana_logo_thumb.svg" alt="Duriana icon set app redesign">
                             <a href="portfolio/duriana.html">
@@ -225,7 +239,7 @@
                 </div>
                 
             </div>
-            <div class="uk-width-1-1 uk-width-medium-1-2 uk-overlay-toggle">
+            <div class="uk-width-1-1 uk-width-medium-1-3 uk-overlay-toggle">
                 <figure class="uk-overlay">
                     <img src="imgs/kaufda-brochure-thumb.png" alt="kaufDA brochure design">
                     <a href="portfolio/kaufda.html">
@@ -261,7 +275,7 @@
             <div class="uk-width-1-2 uk-width-medium-1-4 uk-margin-large-top" data-uk-scrollspy="{cls:'uk-animation-fade'}">
                 <figure>
                     <img class="uk-align-center" src="imgs/Responsive.svg" alt="Responsive web design">
-                    <figcaption class="uk-text-center">Responsive web design</figcaption>
+                    <figcaption class="uk-text-center">Responsive design</figcaption>
                 </figure>
             </div>
             <div class="uk-width-1-2 uk-width-medium-1-4 uk-margin-large-top" data-uk-scrollspy="{cls:'uk-animation-fade', delay:250}">
