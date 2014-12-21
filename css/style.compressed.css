@@ -1421,7 +1421,7 @@ blockquote p { margin:3em; }
 cite a { color:#444; font-weight:600; font-size:16pt; text-align:right; font-style:normal; }
 .start-section,.reference-section { padding-top:100px; padding-bottom:100px; }
 .reference-section { padding-bottom:35px; }
-figcaption { font-size:16pt; font-weight:300; }
+figcaption { font-size:15pt; font-weight:300; }
 .full-width { width:100%; }
 .uk-badge { border-radius:4px; background:rgba(215,215,215,0.3); font-size:14px; color:#F6F4F4; line-height:20px; font-weight:300; padding:4px 10px 2px 10px; margin:4px 3px 4px 0; }
 
