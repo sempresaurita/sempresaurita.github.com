@@ -1,0 +1,424 @@
+{% extends "base.html" %}
+{% block content %}
+
+<!-- start -->
+
+<div class="container">
+
+<div id="start" class="full-width colour-bg-1 start-section">
+  
+    <div class="uk-container uk-container-center">
+        <div class="uk-grid">
+            <article class="uk-width-1-1">
+                <header>
+                    <h1>ANTONELLA TEZZA</h1>
+                    <h2>web / mobile / offline designer</h2>
+                </header>
+            </article>
+            
+        </div>
+
+        <div class="uk-grid statement uk-position-relative">
+
+            <div class="absolut uk-hidden-small">
+                <img src="{% static '/images/plane.svg' %}" class="uk-animation-fade" alt="italian designer living in germany">
+            </div>
+
+            <div class="uk-width-small-1-1 uk-width-medium-1-3 places">
+                <div class="uk-grid">
+                    <div class="uk-width-1-2">
+                        <figure class="uk-align-right">
+                            <img src="{% static '/images/italy.svg' %}" class="uk-animation-scale-up" alt="italy, where i am from">
+                        </figure>
+                    </div>
+                    <div class="uk-width-1-2">
+                        <p>I'm From</p>
+                        <h2>Italy</h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="uk-width-small-1-1 uk-width-medium-1-3">
+                <div class="uk-grid">
+                    <div class="uk-width-1-2">
+                        <figure class="uk-align-right">
+                            <img src="{% static '/images/germany.svg' %}" class="uk-animation-scale-up" alt="germany, where i live">
+                        </figure>
+                    </div>
+                    <div class="uk-width-1-2 uk-text-middle text-img places">
+                        <p>living in</p>
+                        <h2>Germany</h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="uk-width-small-1-1 uk-width-medium-1-3">
+                <div class="uk-grid">
+                    <div class="uk-width-1-2">
+                        <figure class="uk-align-right">
+                            <img src="{% static '/images/world.svg' %}" class="uk-animation-scale-up" alt="world, i am working for it">
+                        </figure>
+                    </div>
+                    <div class="uk-width-1-2">
+                        <p>working for</p>
+                        <h2>the world</h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="absolut worldline uk-hidden-small">
+                <img src="{% static '/images/world_line_and_plane.svg' %}" class="uk-animation-fade" alt="working as designer for the world wilde">
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+
+<!-- First Section portfolio -->
+
+<div id="what" class="full-width colour-bg-1 start-section">
+    <div class="uk-container uk-container-center">
+        <div class="uk-grid">
+            <div class="uk-width-1-1">
+                <article data-uk-scrollspy="{cls:'uk-animation-slide-bottom'}">
+                    <header>
+                        <h1>What I do</h1>
+                        <h3>Here a showcases of selected works</h3>
+                    </header>
+                </article>
+            </div>
+        </div>
+
+        <div id="portfolio" class="uk-grid-width-small-1-2 uk-grid-width-medium-1-3" data-uk-grid="{gutter: 10}"> 
+            <div>
+                <figure class="uk-overlay">
+                    <img width="500" src="{% static '/images/epigami-cover.png' %}" alt="User experience and interface">
+                    <a href="portfolio/epigamizen.html">
+                        <div class="uk-overlay-area">
+                            <div class="uk-overlay-area-content">
+                                <h1 class="uk-h2 tm-overlay-title">
+                                    Epigami Zen
+                                </h1>
+                                <div>UX / UI app</div> 
+                            </div>
+                        </div>
+                    </a>
+                </figure>
+            </div>
+            <div>
+                <figure class="uk-overlay">
+                    <img width="500" src="{% static '/images/nestpick-cover.png' %}" alt="Responsive Email design">
+                    <a href="portfolio/nestpick.html">
+                        <div class="uk-overlay-area">
+                            <div class="uk-overlay-area-content">
+                                <h1 class="uk-h2 tm-overlay-title">
+                                    Nestpick
+                                </h1>
+                                <div>Newsletter email design</div> 
+                            </div>
+                        </div>
+                    </a>
+                </figure>
+            </div>
+            <div>
+                <figure class="uk-overlay">
+                    <img width="500" src="{% static '/images/payorshare_logo_thumb.svg' %}" alt="Corporate identity design and responsive website">
+                    <a href="portfolio/payorshare.html">
+                        <div class="uk-overlay-area">
+                            <div class="uk-overlay-area-content">
+                                <h1 class="uk-h2 tm-overlay-title">
+                                    PayOrShare
+                                </h1>
+                                <div>Corporate identity, website design</div> 
+                            </div>
+                        </div>
+                    </a>
+                </figure>
+            </div>
+            <div>
+                <figure class="uk-overlay">
+                    <img width="500" src="{% static '/images/pickers_logo_thumb.svg' %}" alt="Pickers logo concept app design project">
+                    <a href="portfolio/pickers.html">
+                        <div class="uk-overlay-area">
+                            <div class="uk-overlay-area-content">
+                                <h1 class="uk-h2 tm-overlay-title">
+                                    Pickers
+                                </h1>
+                                <div>Logo, app and website design</div> 
+                            </div>
+                        </div>
+                    </a>
+                </figure>
+            </div>
+            <div>
+                <figure class="uk-overlay">
+                    <img width="500" src="{% static '/images/duriana_logo_thumb.svg' %}" alt="Duriana icon set app redesign">
+                    <a href="portfolio/duriana.html">
+                        <div class="uk-overlay-area">
+                            <div class="uk-overlay-area-content">
+                                <h1 class="uk-h2 tm-overlay-title">
+                                    Duriana
+                                </h1>
+                                <div>Icon set and app redesign</div> 
+                            </div>
+                        </div>
+                    </a>
+                </figure>
+            </div>
+            <div>
+                <figure class="uk-overlay">
+                    <img width="500" src="{% static '/images/citydelivery_thumb.svg' %}" alt="Citydelivery responsive web design and icons">
+                    <a href="portfolio/citydelivery.html">
+                        <div class="uk-overlay-area">
+                            <div class="uk-overlay-area-content">
+                                <h1 class="uk-h2 tm-overlay-title">
+                                    City Delivery
+                                </h1>
+                                <div>Responsive web design</div> 
+                            </div>
+                        </div>
+                    </a>
+                </figure>
+            </div>
+            <div>
+                <figure class="uk-overlay">
+                    <img width="700" src="{% static '/images/retale_logo_thumb.svg' %}" alt="Retale logo concept design project">
+                    <a href="portfolio/retale.html">
+                        <div class="uk-overlay-area">
+                            <div class="uk-overlay-area-content">
+                                <h1 class="uk-h2 tm-overlay-title">
+                                    Retale
+                                </h1>
+                                <div>Brand concept and app redesign</div> 
+                            </div>
+                        </div>
+                    </a>
+                </figure>
+            </div>                
+            <div>
+                <figure class="uk-overlay">
+                    <img src="{% static '/images/kaufda-brochure-thumb.png' %}" alt="kaufDA brochure design">
+                    <a href="portfolio/kaufda.html">
+                        <div class="uk-overlay-area">
+                            <div class="uk-overlay-area-content">
+                                <h1 class="uk-h2 tm-overlay-title">
+                                    kaufDA
+                                </h1>
+                                <div>Brochure design</div> 
+                            </div>
+                        </div>
+                    </a>
+                </figure>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Second Section What I do -->
+
+<div id="workon" class="full-width colour-bg-3 start-section">
+    <div class="uk-container uk-container-center">
+        <div class="uk-grid">
+            <div class="uk-width-1-1">
+                <article class="uk-scrollspy-init-inview" data-uk-scrollspy="{cls:'uk-animation-slide-bottom'}">
+                    <header>
+                        <h1>Work on</h1>
+                        <h3>I like all kinds of design, but I'm better in:</h3>
+                    </header>
+                </article>
+            </div>
+            <div class="uk-width-1-2 uk-width-medium-1-4 uk-margin-large-top" data-uk-scrollspy="{cls:'uk-animation-fade'}">
+                <figure>
+                    <img class="uk-align-center" src="{% static '/images/Responsive.svg' %}" alt="Responsive web design">
+                    <figcaption class="uk-text-center">Responsive design</figcaption>
+                </figure>
+            </div>
+            <div class="uk-width-1-2 uk-width-medium-1-4 uk-margin-large-top" data-uk-scrollspy="{cls:'uk-animation-fade', delay:250}">
+                <figure>
+                    <img class="uk-align-center" src="{% static '/images/Mobile.svg' %}" alt="Mobile design and native application">
+                    <figcaption class="uk-text-center">Mobile design</figcaption>
+                </figure>
+            </div>
+            <div class="uk-width-1-2 uk-width-medium-1-4 uk-margin-large-top" data-uk-scrollspy="{cls:'uk-animation-fade', delay:500}">
+                <figure>
+                    <img class="uk-align-center" src="{% static '/images/corporate.svg' %}" alt="Corporate identity">
+                    <figcaption class="uk-text-center">Corporate identity</figcaption>
+                </figure>
+            </div>
+            <div class="uk-width-1-2 uk-width-medium-1-4 uk-margin-large-top" data-uk-scrollspy="{cls:'uk-animation-fade', delay:750}">
+                <figure>
+                    <img class="uk-align-center" src="{% static '/images/offline.svg' %}" alt="Offline design">
+                    <figcaption class="uk-text-center">Offline design</figcaption>
+                </figure>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Third Section References from Linkedin -->
+
+<div id="reference" class="full-width colour-bg-2 reference-section" data-uk-scrollspy="{cls:'uk-animation-fade', delay:250}">
+    <div class="uk-container uk-container-center">
+        <div class="uk-grid">
+            <div class="uk-width-1-1">
+                <article>
+                    <header>
+                        <h1>What people say</h1>
+                        <h3>References from linkedin</h3>
+                    </header>
+                </article>
+            </div>
+                
+            <div class="uk-width-1-1">
+                <div class="uk-slidenav-position slider">
+                    <div>
+                        <blockquote>
+                            <p>Antonella is one of the best graphic designer I worked with. She is creative, brings in great ideas, and pushes her own projects with passion (e.g. Rebranding of the whole Bonial International Group). Her working style is self-organized and independent. As a Product Managager I just needed to give her a rough explanation of an idea and she designed several suggestions with approaches I would have never think of before. 
+                            I really liked working with Antonella both from a professional and from a collegial/personal perspective.</p>
+                            <footer class="uk-text-right">
+                                <cite><a href="https://www.linkedin.com/profile/view?id=11325395">- Katja Westphal, kaufDA - Bonial International Group</a></cite>
+                            </footer>
+                        </blockquote>
+                    </div>
+                    <div>
+                        <blockquote>
+                            <p>The work she produces is always done in the best way. She showed great creativity and style in the new projects that she had been assigned.</p>
+                            <footer class="uk-text-right">
+                                <cite><a href="https://www.linkedin.com/profile/view?id=11325395">- Alberto Fontana, General Manager at Maxpho</a></cite>
+                            </footer>
+                        </blockquote>
+                    </div>
+                    <div>
+                        <blockquote>
+                            <p>Great web design, creative and accurate!</p>
+                            <footer class="uk-text-right">
+                                <cite><a href="https://www.linkedin.com/profile/view?id=11325395">- Mattia Tonolli, Art director and Photographer at MattGoodVision</a></cite>
+                            </footer>
+                        </blockquote>
+                    </div>
+                    <div>
+                        <blockquote>
+                            <p>Antonella is trained and professional with excellent communication skills.</p>
+                            <footer class="uk-text-right">
+                                <cite><a href="https://www.linkedin.com/profile/view?id=11325395">- CSP Resourcing</a></cite>
+                            </footer>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End uk-grid -->
+    </div>
+</div>
+
+<!-- Fourth Section about my life -->
+
+<div id="aboutme" class="full-width colour-bg-1 start-section">
+  
+    <div class="uk-container uk-container-center">
+        <div class="uk-grid">
+            <article class="uk-width-1-1">
+                <header>
+                    <h1 data-uk-scrollspy="{cls:'uk-animation-slide-bottom'}">About me</h1>
+                    <figure>
+                        <img class="uk-align-center" src="{% static '/images/alpaca_me.svg' %}" alt="myself">
+                    </figure>
+                </header>
+            </article>
+            <div class="uk-width-medium-1-2">
+                    <h2 class="uk-margin-large-top">Italy</h2>
+                    <p>I am Antonella from Verona. During my high school years I started working
+					for a <a href="http://www.colombo3000.com/">web agency</a>. Later I graduated from a fine art academy, and afterwards
+					continued my carrier as a freelancer.</p>
+
+					<p>Taught 90-hour courses at a <a href="http://ipsconsulting.it/">private school</a>, worked with <a href="http://www.adimage.it/">communication agencies</a> as graphic designer, art director and web designer. I also had some
+					projects as a <a href="http://www.globo.it/">toy designer</a>.</p>
+                </div>
+                <div class="uk-width-medium-1-2">
+                    <h2 class="uk-margin-large-top">Berlin</h2>
+                    <p>In love with Berlin, I decided to give up my Italian life and move here in 2011.</p>
+
+					<p>	A fresh and stimulating city, perfect for designers and developers. Worked at
+						DeliveryHero (<a href="http://www.lieferheld.de/">Lieferheld</a>) for almost 2 years, starting as a Web Designer and
+						Front End Developer, later as the Design Team Leader.</p>
+
+					<p>	After Lieferheld, I worked for <a href="http://www.kaufda.de/">kaufDA</a> as Head of Interface Design for 2 years.</p>
+
+					<p>	From August 2014 I’m a full-time freelancer again.</p>
+                </div>
+        </div>
+    </div>
+</div>
+
+<!-- Fifth Section Clients -->
+
+<div id="clients" class="full-width colour-bg-3 start-section">
+    <div class="uk-container uk-container-center">
+        <div class="uk-grid">
+            <div class="uk-width-1-1">
+                <article data-uk-scrollspy="{cls:'uk-animation-slide-bottom'}">
+                    <header>
+                        <h1>Happy clients</h1>
+                    </header>
+                </article>
+            </div>
+            <div class="uk-width-1-2 uk-width-medium-1-4 uk-margin-large-top" data-uk-scrollspy="{cls:'uk-animation-fade'}">
+                    <figure>
+                        <img class="uk-align-center" src="{% static '/images/auctionata.svg' %}" alt="Auctionata">
+                    </figure>
+                </div>
+                <div class="uk-width-1-2 uk-width-medium-1-4 uk-margin-large-top" data-uk-scrollspy="{cls:'uk-animation-fade', delay: 250}">
+                    <figure>
+                        <img class="uk-align-center" src="{% static '/images/epigami_logo.svg' %}" alt="Epigami">
+                    </figure>
+                </div>
+                <div class="uk-width-1-2 uk-width-medium-1-4 uk-margin-large-top" data-uk-scrollspy="{cls:'uk-animation-fade', delay: 500}">
+                    <figure>
+                        <img class="uk-align-center" src="{% static '/images/city_delivery.svg' %}" alt="City Delivery">
+                    </figure>
+                </div>
+                <div class="uk-width-1-2 uk-width-medium-1-4 uk-margin-large-top" data-uk-scrollspy="{cls:'uk-animation-fade', delay: 750}">
+                    <figure>
+                        <img class="uk-align-center" src="{% static '/images/payorshare_logo.svg' %}" alt="PayOrShare">
+                    </figure>
+                </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Sixth Section Contact -->
+
+<div id="contact" class="full-width colour-bg-2 start-section uk-width-medium-2-5" data-uk-scrollspy="{cls:'uk-animation-fade', delay:250}">
+    <div class="uk-container uk-container-center">
+        <div class="uk-grid">
+            <div class="uk-width-1-1">
+                <article>
+                    <header>
+                        <h1>WORKING ON INTERESTING PROJECT?</h1>
+                        <h2 class="uk-margin-large-bottom">I’ll be happy to be your designer.</h2>
+                    </header>
+                </article>
+            </div>
+            <div class="uk-width-1-1">
+            	<ul class="uk-grid uk-grid-width-1-3">
+            		<li data-uk-scrollspy="{cls:'uk-animation-fade', delay:250}">
+            			<a href="#"><img class="sendEmail social-icon uk-align-right" src="{% static '/images/email.svg' %}" alt="email"></a>
+            		</li>
+            		<li data-uk-scrollspy="{cls:'uk-animation-fade', delay:500}">
+            			<a href="http://www.linkedin.com/in/antonellatezza"><img class="social-icon uk-align-center" src="{% static '/images/linkedin.svg' %}" alt="linkedin"></a>
+            		</li>
+            		<li data-uk-scrollspy="{cls:'uk-animation-fade', delay:750}">
+            			<a href="https://twitter.com/antonellatezza">
+                    	<img class="social-icon uk-align-left" src="{% static '/images/twitter.svg' %}" alt="twitter"></a>
+            		</li>
+            	</ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock content%}

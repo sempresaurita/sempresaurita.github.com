@@ -1,0 +1,34 @@
+title_client_project: Retale
+
+{% extends "base_portfolio.html" %}
+
+{% block title %}Retale, corporate identity design, IOS and Android app UX design{% endblock %}
+{% block ogtitle %}Creation of the corporate identity for Retale, che USA weekly ads app.{% endblock %}
+{% block ogdescription %}For this company I created the logo, the brand design and the app design, which unify the design of all the others company country members.{% endblock %}
+
+{% block description_project %}
+	<p><a href="http://www.retale.com">Retale</a> is a web and mobile application which offers a set of weekly ads based on the user location. The name “Retale” derives from wordplay between Retail and Fairy tale. The Little Red Riding Hood would run as a principal theme to communicate the brand and the Handle Basket is the signature emblem of Retale.</p>
+    <p>
+        <div class="uk-badge">BRAND DESIGN</div>
+        <div class="uk-badge">CONCEPT</div>
+        <div class="uk-badge">UI - UX DESIGN</div>
+    </p>
+{% endblock %}
+
+{% block images_project %}
+    <figure class="uk-margin-small" data-uk-scrollspy="{cls:'uk-animation-fade'}">
+        <img class="uk-align-center" src="{% static '/images/retale_logo.png' %}" alt="Logo Retale">
+    </figure>
+    <figure class="uk-margin-small" data-uk-scrollspy="{cls:'uk-animation-fade', delay:250}">
+        <img class="uk-align-center" src="{% static '/images/retale_logo_reverse.png' %}" alt="Logo Retale reverse">
+    </figure>
+    <figure class="uk-margin-small" data-uk-scrollspy="{cls:'uk-animation-fade', delay:500}">
+        <img class="uk-align-center" src="{% static '/images/retale_brandguideline.png' %}" alt="Brand guideline for Retale">
+    </figure>
+    <figure class="uk-margin-small" data-uk-scrollspy="{cls:'uk-animation-fade', delay:250}">
+        <img class="uk-align-center" src="{% static '/images/retale_app.png' %}" alt="Retale App prospective">
+    </figure>
+    <figure class="uk-margin-small" data-uk-scrollspy="{cls:'uk-animation-fade', delay:250}">
+        <img class="uk-align-center" src="{% static '/images/retale_app_design.png' %}" alt="Retale App screen design">
+    </figure>
+{% endblock %}

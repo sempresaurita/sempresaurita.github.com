@@ -1,0 +1,37 @@
+title_client_project: Pickers
+
+{% extends "base_portfolio.html" %}
+
+{% block title %}IOS app design and website for Pickers{% endblock %}
+{% block ogtitle %}Logo, IOS app design and mini website.{% endblock %}
+{% block ogdescription %}For this company I created the logo, the design of the IOS app and the design of the mini website. {% endblock %}
+
+{% block description_project %}
+	<p><a href="http://artpickers.com/">Pickers</a> is a mobile app that connects antique with fun. It's a marketplace where people can find unique treasures. The logo with its rotonde and shape gives a funny, gamelike style, while the colour palette elevates the app to a more classic style.</p>
+    <p>
+        <div class="uk-badge">LOGO DESIGN</div>
+        <div class="uk-badge">MOBILE DESIGN</div>
+        <div class="uk-badge">WEB DESIGN</div>
+    </p>
+{% endblock %}
+
+{% block images_project %}
+    <figure class="uk-margin-small" data-uk-scrollspy="{cls:'uk-animation-fade'}">
+        <img class="uk-align-center" src="{% static '/images/pickers_logo.png' %}" alt="Logo Pickers">
+    </figure>
+    <figure class="uk-margin-small" data-uk-scrollspy="{cls:'uk-animation-fade', delay:250}">
+        <img class="uk-align-center" src="{% static '/images/pickers_logo_reverse.png' %}" alt="Logo Pickers">
+    </figure>
+    <figure class="uk-margin-small" data-uk-scrollspy="{cls:'uk-animation-fade', delay:500}">
+        <img class="uk-align-center" src="{% static '/images/pickers_palette.png' %}" alt="Logo Pickers">
+    </figure>
+    <figure class="uk-margin-small" data-uk-scrollspy="{cls:'uk-animation-fade', delay:250}">
+        <img class="uk-align-center" src="{% static '/images/pickers_prospective.png' %}" alt="Logo Pickers">
+    </figure>
+    <figure class="uk-margin-small" data-uk-scrollspy="{cls:'uk-animation-fade', delay:250}">
+        <img class="uk-align-center" src="{% static '/images/pickers_homepage.png' %}" alt="Logo Pickers">
+    </figure>
+    <figure class="uk-margin-small" data-uk-scrollspy="{cls:'uk-animation-fade', delay:250}">
+        <img class="uk-align-center" src="{% static '/images/pickers_waitinglist.png' %}" alt="Logo Pickers">
+    </figure>
+{% endblock %}

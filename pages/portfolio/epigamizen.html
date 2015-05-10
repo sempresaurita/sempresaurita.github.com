@@ -1,0 +1,54 @@
+title_client_project: EpigamiZEN
+
+{% extends "base_portfolio.html" %}
+
+{% block title %}UX - UI for EpigamiZEN{% endblock %}
+{% block ogtitle %}UX - UI for EpigamiZEN - the managing tool for educational institutions{% endblock %}
+{% block ogdescription %}User experience and User Interface for a managing tool for organise educational institutions {% endblock %}
+
+{% block description_project %}
+	<p><a href="http://zen.epigami.sg/">Epiugami Zen</a> is a platform for managing educational institutions. It's made to simplify the organization of teachers, courses, students and invoices. The startup is Singapore based.</p>
+	<p>
+	    <div class="uk-badge">UX / UI</div>
+	    <div class="uk-badge">PROTOTYPE</div>
+	    <div class="uk-badge">APP DESIGN</div>
+	</p>
+{% endblock %}
+
+{% block images_project %}
+    <figure class="uk-margin-large" data-uk-scrollspy="{cls:'uk-animation-fade'}">
+        <img class="uk-align-center" src="{% static '/images/epigami_workflow.gif' %}" alt="Paper prototype">
+    </figure>
+
+    <div class="uk-margin-large" >
+    <video class="uk-align-center uk-responsive-width" width="740" height="408" controls data-uk-scrollspy="{cls:'uk-animation-fade', delay:250}">
+      <source src="{% static '/images/epigami-prototype.mp4' %}" type="video/mp4">
+      <!-- <source class="uk-align-center"  src="movie.ogg" type="video/ogg"> -->
+    Your browser does not support the video tag.
+    </video>
+    </div>
+    <figure class="uk-margin-remove" data-uk-scrollspy="{cls:'uk-animation-fade', delay:250}">
+        <img class="uk-align-center uk-margin-bottom-remove" src="{% static '/images/epigami-header.png' %}" alt="Organise educational institutions">
+    </figure>
+    <figure class="uk-margin-remove" data-uk-scrollspy="{cls:'uk-animation-fade', delay:500}">
+        <img class="uk-align-center uk-margin-bottom-remove" src="{% static '/images/epigami-home.png' %}" alt="Home reponsive app">
+    </figure>
+    <figure class="uk-margin-remove" data-uk-scrollspy="{cls:'uk-animation-fade', delay:250}">
+        <img class="uk-align-center uk-margin-bottom-remove" src="{% static '/images/epigami-layout.png' %}" alt="The layout of the web app">
+    </figure>
+    <figure class="uk-margin-remove" data-uk-scrollspy="{cls:'uk-animation-fade', delay:250}">
+        <img class="uk-align-center uk-margin-bottom-remove" src="{% static '/images/epigami-styleguide.png' %}" alt="The styleguide">
+    </figure>
+    <figure class="uk-margin-remove" data-uk-scrollspy="{cls:'uk-animation-fade', delay:250}">
+        <img class="uk-align-center uk-margin-bottom-remove" src="{% static '/images/epigami-ui.png' %}" alt="The user interface">
+    </figure>
+    <figure class="uk-margin-remove" data-uk-scrollspy="{cls:'uk-animation-fade', delay:250}">
+        <img class="uk-align-center uk-margin-bottom-remove" src="{% static '/images/epigami-project.png' %}" alt="The project">
+    </figure>
+    <figure class="uk-margin-remove" data-uk-scrollspy="{cls:'uk-animation-fade', delay:250}">
+        <img class="uk-align-center uk-margin-bottom-remove" src="{% static '/images/epigami-project2.png' %}" alt="The project 2">
+    </figure>
+    <figure class="uk-margin-remove" data-uk-scrollspy="{cls:'uk-animation-fade', delay:250}">
+        <img class="uk-align-center uk-margin-bottom-remove" src="{% static '/images/epigami-project3.png' %}" alt="The project 3">
+    </figure>
+{% endblock %}

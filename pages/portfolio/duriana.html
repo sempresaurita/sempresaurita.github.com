@@ -1,0 +1,30 @@
+title_client_project: Duriana
+
+{% extends "base_portfolio.html" %}
+
+{% block title %}IOS and Android styleguide, Icon set design for Duriana{% endblock %}
+{% block ogtitle %}IOS and Android styleguide, Icon set design for Duriana{% endblock %}
+{% block ogdescription %}For Duriana I created of an uniform appearance for the Android and IOS app and the icons set. {% endblock %}
+
+{% block description_project %}
+	<p><a href="http://www.duriana.com/">Duriana</a> is a mobile app for selling and buying used items. The goal of the project was to give an uniform appearance in line with Android and iOS style guidelines. I created an icon set and a unified style guide.</p>
+    <p>
+        <div class="uk-badge">ICON DESIGN</div>
+        <div class="uk-badge">MOBILE DESIGN</div>
+    </p>
+{% endblock %}
+
+{% block images_project %}
+    <figure class="uk-margin-small" data-uk-scrollspy="{cls:'uk-animation-fade'}">
+        <img class="uk-align-center" src="{% static '/images/duriana_icons.png' %}" alt="Icons Duriana">
+    </figure>
+    <figure class="uk-margin-small" data-uk-scrollspy="{cls:'uk-animation-fade', delay:250}">
+        <img class="uk-align-center" src="{% static '/images/duriana_set_icons.png' %}" alt="Set Icons Duriana">
+    </figure>
+    <figure class="uk-margin-small" data-uk-scrollspy="{cls:'uk-animation-fade', delay:500}">
+        <img class="uk-align-center" src="{% static '/images/duriana_uiset-ios.png' %}" alt="UI Set IOS Duriana">
+    </figure>
+    <figure class="uk-margin-small" data-uk-scrollspy="{cls:'uk-animation-fade', delay:250}">
+        <img class="uk-align-center" src="{% static '/images/duriana_prospective.png' %}" alt="Duriana App prospective">
+    </figure>
+{% endblock %}

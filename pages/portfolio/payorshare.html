@@ -1,0 +1,28 @@
+title_client_project: PayOrShare
+
+{% extends "base_portfolio.html" %}
+
+{% block title %}Brand design and web design for PayOrShare{% endblock %}
+{% block ogtitle %}Corporare identity design, stationary design and web design for PayOrShare {% endblock %}
+{% block ogdescription %}For this company I created the brand, the stationary design and the first look and feel of the website. {% endblock %}
+
+{% block description_project %}
+	<p><a href="http://www.payorshare.de/">PayOrShare</a> is a startup based in Hamburg. Share or pay to get to read the content of a website, game etc.</p>
+    <p>
+        <div class="uk-badge">CORPORATE DESIGN</div>
+        <div class="uk-badge">BRAND DESIGN</div>
+        <div class="uk-badge">RESPONSIVE DESIGN</div>
+    </p>
+{% endblock %}
+
+{% block images_project %}
+    <figure class="uk-margin-small" data-uk-scrollspy="{cls:'uk-animation-fade'}">
+        <img class="uk-align-center" src="{% static '/images/payorshare_logo.png' %}" alt="Brand design,logo design">
+    </figure>
+    <figure class="uk-margin-small" data-uk-scrollspy="{cls:'uk-animation-fade', delay:250}">
+        <img class="uk-align-center" src="{% static '/images/payorshare_stationery.png' %}" alt="Business card and Letterhead design">
+    </figure>
+    <figure class="uk-margin-small" data-uk-scrollspy="{cls:'uk-animation-fade', delay:500}">
+        <img class="uk-align-center" src="{% static '/images/payorshare_website.png' %}" alt="Responsive web design">
+    </figure>
+{% endblock %}

@@ -1,0 +1,30 @@
+title_client_project: City Delivery
+
+{% extends "base_portfolio.html" %}
+
+{% block title %}Responsive web design for Citydelivery{% endblock %}
+{% block ogtitle %}Web design for a food platform{% endblock %}
+{% block ogdescription %}Citydelivery is a food platform, where people can order already prepared dishes or groceries. {% endblock %}
+
+{% block description_project %}
+	<p><a href="http://www.citydelivery.ph/">Citydelivery</a> is an online platform for Philipine market where people can order food or groceries. The idea was to simplify the design and user experience.</p>
+    <p>
+        <div class="uk-badge">ICON DESIGN</div>
+        <div class="uk-badge">RESPONSIVE WEB DESIGN</div>
+    </p>
+{% endblock %}
+
+{% block images_project %}
+    <figure class="uk-margin-small" data-uk-scrollspy="{cls:'uk-animation-fade'}">
+        <img class="uk-align-center" src="{% static 'images/city-icons.png' %}" alt="CityDelivery icons">
+    </figure>
+    <figure class="uk-margin-small" data-uk-scrollspy="{cls:'uk-animation-fade', delay:250}">
+        <img class="uk-align-center" src="{% static 'images/city-desktopview.png' %}" alt="Homepage Citydelivery reponsive website">
+    </figure>
+    <figure class="uk-margin-small" data-uk-scrollspy="{cls:'uk-animation-fade', delay:500}">
+        <img class="uk-align-center" src="{% static 'images/city-rest-desktopview.png' %}" alt="RestaurantList Citydelivery reponsive website">
+    </figure>
+    <figure class="uk-margin-small" data-uk-scrollspy="{cls:'uk-animation-fade', delay:250}">
+        <img class="uk-align-center" src="{% static 'images/city-menu-desktopview.png' %}" alt="Menu page Citydelivery reponsive website">
+    </figure>
+{% endblock %}

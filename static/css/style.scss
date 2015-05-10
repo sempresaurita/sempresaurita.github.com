@@ -1,0 +1,349 @@
+/* 
+
+GENERAL
+
+=========================================================*/
+p {
+    font-size: 16pt;
+    font-weight: 300;
+    line-height: 26pt;
+}
+a,
+.uk-navbar-nav>li>a {
+    color: #1ABC9C;
+    font-weight: 600;
+    text-shadow: none;
+    border: none;
+}
+
+a:hover,
+.uk-navbar-nav>li:hover>a, 
+.uk-navbar-nav>li>a:focus {
+    color: #16A085;
+}
+
+.uk-navbar-nav>li.uk-active>a:hover {
+    color: #444;
+}
+h1, h2, h3, h4, h5, h6, p, blockquote, footer, ul li, a{
+   font-family: 'Source Sans Pro', sans-serif; 
+}
+h1, h2, h3, h4, h5, h6 {
+    text-align: center;
+}
+h1 {
+    font-weight: 200;
+    text-transform: uppercase;
+    font-size: 40pt;
+    color: #444;
+    line-height: 46pt;
+}
+
+h2 {
+    font-weight: 600;
+    color: #1ABC9C;
+    font-size: 28pt;
+    line-height: 34pt;
+}
+
+blockquote {
+    font-weight: 300;
+    font-size: 20pt;
+    font-style: normal;
+    line-height: 30pt;
+    border-left: none;
+    background:url('../images/quotes.svg') top left no-repeat;
+}
+blockquote p {
+    margin: 3em;
+}
+
+@media (max-width: 600px) {
+    blockquote {
+        background: none;
+    }
+      blockquote p {
+        margin: 1em;
+    }
+}
+cite a{
+    color: #444;
+    font-weight: 600;
+    font-size: 16pt;
+    text-align: right;
+    font-style: normal;
+}
+
+.start-section, .reference-section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.reference-section {
+    padding-bottom: 35px;
+}
+
+figcaption {
+    font-size: 16pt;
+    font-weight: 300;
+}
+
+.full-width  {
+    width: 100%;    
+}
+
+.uk-badge {
+    border-radius: 4px;
+    background: rgba(215,215,215,0.3);
+    font-size: 14px;
+    color: #F6F4F4;
+    line-height: 20px;
+    font-weight: 300;
+    padding: 4px 10px 2px 10px;
+    margin: 4px 3px 4px 0px;
+}
+@media (min-width: 768px) {
+    .uk-description-list-horizontal>dt {
+        width: 100px;
+    }
+    .uk-description-list-horizontal>dd {
+        margin-left: 0;
+    }
+}
+
+address h3 {
+    text-align: left;
+}
+
+.uk-grid>* {
+
+	margin: 0;
+}
+
+@media (min-width: 1220px) {
+	
+	.uk-grid:not(.uk-grid-preserve)>*{
+		padding-left: 35px;
+	}		
+}
+
+/* 
+
+BACKGROUNDS
+
+=========================================================*/
+
+.colour-bg-1 {
+    background: #F6F4F4;
+}
+
+.colour-bg-2 {
+    background: #1ABC9C;
+}
+
+.colour-bg-3 {
+    background: #16A085;
+}
+
+.colour-bg-2 p, .colour-bg-3 p,
+.colour-bg-2 h1, .colour-bg-3 h1,
+.colour-bg-2 h2, .colour-bg-3 h2,
+.colour-bg-2 h3, .colour-bg-3 h3,
+.colour-bg-2 h4, .colour-bg-3 h4,
+.colour-bg-2 h5, .colour-bg-3 h5,
+.colour-bg-2 h6, .colour-bg-3 h6,
+.colour-bg-3 figcaption {
+    color: #F6F4F4;
+}
+
+/* 
+
+NAVBAR NAVIGATION
+
+=========================================================*/
+
+.uk-navbar-nav,
+.uk-navbar,
+.uk-navbar-nav>li.uk-active>a,
+.uk-navbar-nav>li:hover>a, 
+.uk-navbar-nav>li>a:focus {
+    background: transparent;
+    border: none;
+    margin-right: 0;
+}
+.uk-navbar-nav>li>a {
+    padding: 0 10px;
+}
+.uk-navbar-flip .uk-navbar-nav>li>a {
+    margin-right: 0;
+}
+.sticky-navigation {
+    background-color: rgba(246,244,244, 1.0);
+    z-index: 99999;
+}
+
+/* 
+
+SECTIONS
+
+=========================================================*/
+#start h1{ 
+    font-size: 40pt;
+    margin-bottom: 0px;
+}
+
+#start h2{ 
+    font-size: 17pt;
+     margin-top: 0px;
+}
+
+#start .statement .places {
+    margin-bottom: 20px;
+}
+@media (min-width: 600px) {
+  .start .statement  {
+        padding-top: 92px;
+    }
+}
+
+#start .statement p {
+    margin-bottom: 0px;
+    margin-top: 25%;
+}
+#start .statement h2 {
+    text-align: left;
+    color: #444;
+    margin-top: 0px;
+}
+
+#start .statement .absolut {
+    position: absolute;
+    margin-left: 115px;
+    margin-top: -52px;
+}
+
+#start .statement .absolut.worldline {
+    right: 0;
+    margin-right: 220px;
+    margin-top: 60px;
+}
+
+@media (max-width: 1200px) {
+
+    #start .statement .absolut img{
+        width: 247px;
+        margin-top: 30px;
+    }
+
+    #start .statement .absolut.worldline {
+        margin-top: 40px;
+        margin-right: 185px;
+    }
+
+    #start .statement .absolut.worldline img{
+        width: 300px;
+    }
+
+}
+@media (max-width: 900px) {
+
+    #start .statement .absolut img{
+        width: 300px;
+        margin-top: 16px;
+        margin-left: -30px;
+    }
+
+    #start .statement .absolut.worldline {
+        margin-right: 133px;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 800px) {
+
+    #start .statement .absolut img{
+        width: 320px;
+        margin-top: 16px;
+        margin-left: -60px;
+    }
+
+    #start .statement .absolut.worldline {
+        margin-right: 85px;
+        margin-top: 27px;
+    }
+
+}
+
+#aboutme h2 {
+    text-align: left;
+    color: #444444;
+}
+
+#workon img {
+    height: 170px;
+}
+#contact img {
+    height: 72px;
+ }
+
+footer.start-section {
+    padding: 15px 0;
+}
+
+/* 
+
+OVERLAY
+
+=========================================================*/
+
+.uk-overlay h1 {
+  color: #fff;
+}
+.uk-overlay-area {
+	background: rgba(0,0,0,0.7);
+}
+
+.tm-overlay-title:after {
+	content: " ";
+	display: block;
+	position: absolute;
+	left: 50%;
+	width: 18px;
+	margin-top: 5px;
+	margin-left: -9px;
+	border-top: 2px solid #fff;
+}
+
+/* 
+
+SLICK SLIDER
+
+=========================================================*/
+.slick-prev, .slick-next {
+    width: 30px;
+    height: 30px;
+}
+
+/* 
+
+PORTFOLIO
+
+=========================================================*/
+.portfolio {
+    background: #444444;
+}
+.portfolio p,
+.portfolio h2 {
+    color: #F6F4F4;
+}
+.portfolio h2 {
+    text-align: left;
+}
+.portfolio h2.title-project img {
+    margin-right: 13px; 
+    margin-top: 10px;
+    height: 28px;
+    vertical-align: top;
+}
+.portfolio h2.title-project a:hover img{
+    opacity: 0.7;
+}

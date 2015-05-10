@@ -1,0 +1,33 @@
+title_client_project: Nestpick
+
+{% extends "base_portfolio.html" %}
+
+{% block title %}Newsletter design for Nestpick{% endblock %}
+{% block ogtitle %}Newsletter design for the startup Nestpick{% endblock %}
+{% block ogdescription %}Newsletter design for welcoming new landlords and new users in the Nestpick platform.{% endblock %}
+
+{% block description_project %}
+	<p><a href="http://www.nestpick.com/">Nestpick</a> is a platform where people can rent temporary rooms or flats. This platform is focused on students who are going abroad and they are looking for a place to stay.</p>
+    <p>
+        <div class="uk-badge">NEWSLETTER</div>
+        <div class="uk-badge">RESPONSIVE EMAIL DESIGN</div>
+    </p>
+{% endblock %}
+
+{% block images_project %}
+    <figure class="uk-margin-small" data-uk-scrollspy="{cls:'uk-animation-fade'}">
+        <img class="uk-align-center" src="{% static '/images/nestpick-cover.png' %}" alt="Cover project">
+    </figure>
+    <figure class="uk-margin-small" data-uk-scrollspy="{cls:'uk-animation-fade'}">
+        <img class="uk-align-center" src="{% static '/images/nestpick-email01.png' %}" alt="Email">
+    </figure>
+    <figure class="uk-margin-small" data-uk-scrollspy="{cls:'uk-animation-fade', delay:250}">
+        <img class="uk-align-center" src="{% static '/images/nestpick-email02.png' %}" alt="Newsletter">
+    </figure>
+    <figure class="uk-margin-small" data-uk-scrollspy="{cls:'uk-animation-fade', delay:500}">
+        <img class="uk-align-center" src="{% static '/images/nestpick-email03.png' %}" alt="Email responsive">
+    </figure>
+    <figure class="uk-margin-small" data-uk-scrollspy="{cls:'uk-animation-fade', delay:250}">
+        <img class="uk-align-center" src="{% static '/images/nestpick-email04.png' %}" alt="Newsletter responsive">
+    </figure>
+{% endblock %}

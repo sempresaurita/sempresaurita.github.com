@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+
+    {% block nav %}
+    <div id="start" class="full-width colour-bg-1">
+      
+        <div class="uk-container uk-container-center">
+            <div class="uk-grid">
+                <article class="uk-width-1-1">
+                    <header>
+                        <h1>ANTONELLA TEZZA</h1>
+                        <h2>web / mobile / offline designer</h2>
+                    </header>
+                </article>
+                
+            </div>
+
+        </div>
+    </div>
+    {% endblock %}
+
+    {% block content %}
+    <div class="full-width portfolio">
+        <div class="uk-container uk-container-center">
+            <div class="uk-grid">
+                <div class="uk-width-1-1 uk-width-medium-3-10">
+                    <div class="uk-vertical-align" data-uk-sticky="{media: '(min-width: 640px), top:100'}">
+                        <h2 class="uk-margin-large-top title-project">
+                            <a href="../index.html#what"><img src="{% static '/images/back_arrow.svg' %}" alt="back to portfolio"></a> 
+                            {{ title_client_project }}
+                        </h2>
+                        {% block description_project %}
+                        {% endblock %}
+                    </div>
+                </div>
+                <div class="uk-width-1-1 uk-width-medium-7-10 uk-margin-large-top">
+                    {% block images_project %}
+                    {% endblock %}
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endblock content %}
