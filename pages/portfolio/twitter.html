@@ -1,0 +1,33 @@
+title_client_project: Twitter
+
+{% extends "base_portfolio.html" %}
+
+{% block title %}Creative coasters design for Twitter{% endblock %}
+{% block ogtitle %} Creative idea for coasters {% endblock %}
+{% block ogdescription %}I created these 4 coasters for Twitter stand in a fair that's taking place in Germany this September.
+ {% endblock %}
+
+{% block description_project %}
+	<p>For <a href="http://www.twitter.com/">Twitter</a> I created these 4 coasters for Twitter stand in a fair that's taking place in Germany this September.
+</p>
+    <p>
+        <div class="uk-badge">OFFLINE DESIGN</div>
+        <div class="uk-badge">GADGET DESIGN</div>
+        <div class="uk-badge">COASTERS</div>
+    </p>
+{% endblock %}
+
+{% block images_project %}
+    <figure class="uk-margin-remove" data-uk-scrollspy="{cls:'uk-animation-fade'}">
+        <img class="uk-margin-top-remove uk-align-center" src="{% static '/images/twitter-coaster.jpg' %}" alt="Brand design,logo design">
+    </figure>
+    <figure class="uk-margin-remove" data-uk-scrollspy="{cls:'uk-animation-fade', delay:250}">
+        <img class="uk-margin-top-remove uk-align-center" src="{% static '/images/twitter-coaster02.jpg' %}" alt="Business card and Letterhead design">
+    </figure>
+    <figure class="uk-margin-remove" data-uk-scrollspy="{cls:'uk-animation-fade', delay:500}">
+        <img class="uk-margin-top-remove uk-align-center" src="{% static '/images/twitter-coaster03.jpg' %}" alt="Responsive web design">
+    </figure>
+    <figure class="uk-margin-remove" data-uk-scrollspy="{cls:'uk-animation-fade', delay:500}">
+        <img class="uk-margin-top-remove uk-align-center" src="{% static '/images/twitter-coaster04.jpg' %}" alt="Responsive web design">
+    </figure>
+{% endblock %}
