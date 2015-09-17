@@ -26,8 +26,8 @@ function retina() {
 		
 		var path = $(image).attr("src");
 		
-		path = path.replace(".png", "@2x.png");
-		path = path.replace(".jpg", "@2x.jpg");
+		path = path.replace(".png", "_2x.png");
+		path = path.replace(".jpg", "_2x.jpg");
 		
 		$(image).attr("src", path);
 	});
